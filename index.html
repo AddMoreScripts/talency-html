@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +18,6 @@
 
 <body>
   <!-- === === === ШАПКА СТАРТ === === === -->
-
   <header class="hdr">
     <div class="hdr__wrap flexi">
 
@@ -66,7 +65,7 @@
 
 
   <section class="hero">
-    <div class="hero__small">Курсы по психологии</div>
+    <h2 class="hero__small">Курсы по психологии</h2>
     <div class="hero__h1">
       За 1 год сделаем <img src="/img/psychology/b1-sm.svg" alt=""> из вас <br>
       <b>успешного психолога-консультанта</b><br>
@@ -132,40 +131,42 @@
       <h2 class="title">
         Получить полную<br> <b>программу курса</b>
       </h2>
-      <div class="programfromlead__formwrap flexi">
-        <div class="programfromlead__left">
-          <div class="formvkbutton">
-            Заполнить через VK
-          </div>
-          <div class="programfromlead__grid flexi">
-            <div class="programfromlead__col">
-              <label for="username1">Имя</label>
-              <input type="text" placeholder="Алиса" id="username1">
+      <form action="#">
+        <div class="programfromlead__formwrap flexi">
+          <div class="programfromlead__left">
+            <div class="formvkbutton">
+              Заполнить через VK
             </div>
-            <div class="programfromlead__col">
-              <label for="phone1">Телефон</label>
-              <div class="phoneinp flexi">
-                <button class="phoneinp__country">
-                  RU
-                </button>
-                <div class="phoneinp__code">+7</div>
-                <input type="tel" placeholder="(999) 999-99-99" id="phone1">
+            <div class="programfromlead__grid flexi">
+              <div class="programfromlead__col">
+                <label for="username1">Имя</label>
+                <input type="text" placeholder="Алиса" id="username1">
+              </div>
+              <div class="programfromlead__col">
+                <label for="phone1">Телефон</label>
+                <div class="phoneinp flexi">
+                  <button class="phoneinp__country">
+                    RU
+                  </button>
+                  <div class="phoneinp__code">+7</div>
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone1">
+                </div>
+              </div>
+              <div class="programfromlead__col">
+                <label for="email1">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email1">
               </div>
             </div>
-            <div class="programfromlead__col">
-              <label for="email1">Почта</label>
-              <input type="email" placeholder="hello@mail.ru" id="email1">
-            </div>
+            <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
+                href="#">обработки персональных данных</a></div>
+          </div><!-- //programfromlead__left -->
+          <div class="programfromlead__right">
+            <button class="programfromlead__submit">
+              Получить <br>программу
+            </button>
           </div>
-          <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
-              href="#">обработки персональных данных</a></div>
-        </div><!-- //programfromlead__left -->
-        <div class="programfromlead__right">
-          <button class="programfromlead__submit">
-            Получить <br>программу
-          </button>
         </div>
-      </div>
+      </form>
     </div>
   </section><!-- //programfromlead -->
 
@@ -369,7 +370,6 @@
         </div>
       </div>
 
-
       <div class="teamblock flexi">
         <div class="teamblock__nav teamblock__nav--left">
           <a href="#" class="teamblock__navlink is-active" data-slide="1">Новоселова</a>
@@ -453,9 +453,1071 @@
           </div>
         </div>
 
+      </div><!-- //teamblock -->
+    </div>
+  </section><!-- //mentors -->
 
+
+
+  <section class="regalii">
+    <div class="container">
+      <h2 class="title"><b>Преподаватели</b> — члены <br>профессиональных объединений <br>и ассоциаций</h2>
+      <div class="regalii__grid">
+        <div class="regalii__item">
+          <img src="/img/psychology/b10-1.png" alt="">
+          <div class="regalii__title">Российское психологическое общество</div>
+        </div>
+        <div class="regalii__item">
+          <img src="/img/psychology/b10-2.png" alt="">
+          <div class="regalii__title">Российская психотерапевти-ческая лига</div>
+        </div>
+        <div class="regalii__item">
+          <img src="/img/psychology/b10-3.png" alt="">
+          <div class="regalii__title">Американская психологическая ассоциация</div>
+        </div>
+        <div class="regalii__item">
+          <img src="/img/psychology/b10-4.png" alt="">
+          <div class="regalii__title">Ассоциация сексологов</div>
+        </div>
       </div>
+    </div>
   </section>
+
+
+
+  <section class="stepform">
+    <div class="container">
+      <h2 class="title">Возникли вопросы?</h2>
+      <div class="stepform__vector">
+        <p>Оставьте свой <br>номер телефона</p>
+        <p>Наш специалист <br>свяжется с вами</p>
+        <p>Даст подробную информацию о&nbsp;начале учебы на&nbsp;курсе</p>
+      </div>
+      <form action="#">
+        <div class="programfromlead__formwrap flexi">
+          <div class="programfromlead__left">
+            <div class="formvkbutton">
+              Заполнить через VK
+            </div>
+            <div class="programfromlead__grid flexi">
+              <div class="programfromlead__col">
+                <label for="username2">Имя</label>
+                <input type="text" placeholder="Алиса" id="username2">
+              </div>
+              <div class="programfromlead__col">
+                <label for="phone2">Телефон</label>
+                <div class="phoneinp flexi">
+                  <button class="phoneinp__country">
+                    RU
+                  </button>
+                  <div class="phoneinp__code">+7</div>
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone2">
+                </div>
+              </div>
+              <div class="programfromlead__col">
+                <label for="email2">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email2">
+              </div>
+            </div>
+            <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
+                href="#">обработки персональных данных</a></div>
+          </div><!-- //programfromlead__left -->
+          <div class="programfromlead__right">
+            <button class="programfromlead__submit">
+              Получить <br>консультацию
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section><!-- //stepform -->
+
+
+
+  <section class="features psy11">
+    <div class="container">
+      <h2 class="title">Вас ждет <b>фундаментальная, <br>глубокая</b> и <b>подробная</b> <br>программа обучения</h2>
+      <div class="features__wrap">
+        <div class="features__left">
+          <video preload="auto" playsinline autoplay loop muted>
+            <source src="/img/psychology/b12-video.mp4">
+          </video>
+        </div>
+        <div class="features__right">
+          <div class="features__subtitle">
+            Подробная как<br>
+            в университете,<br>
+            но компактная<br>
+            и не скучная
+          </div>
+          <div class="features__grid">
+            <div class="features__item">
+              <img src="/img/psychology/b12-1.png" alt="">
+              <p>Программа разработана <b>на основе ФГОС ВО 370301 «Психология»</b>, и соответствует <b>профессиональным
+                  стандартам</b></p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b12-2.png" alt="">
+              <p><b>Практика</b> начнется с первых дней обучения</p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b12-3.png" alt="">
+              <p><b>Современные</b> методики обучения</p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b12-4.png" alt="">
+              <p>Более <b> 100 дополнительных материалов </b>, (конспекты, шпаргалки, схемы, протоколы, упражнения,
+                методики, литература)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //psy11 -->
+
+
+
+  <section class="progrmsummary container">
+    <h2 class="title">Программа обучения</h2>
+    <div class="progrmsummary__wrap">
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 1. Знакомство профессией психолог-консультант</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <h3>Теория</h3>
+            <p>Погрузитесь в основы психологии, узнайте о её возникновении и популярных психологических практиках.</p>
+            <p>Улучшите ваши личные навыки, полезные в работе практикующего психолога.</p>
+            <p>Вы изучите:</p>
+            <ul>
+              <li>содержание профессиональной деятельности психолога-консультанта,</li>
+              <li>этические принципы работы психолога-консультанта</li>
+              <li>историю психологии и психологического консультирования,</li>
+              <li>востребованные направления психологического консультирования</li>
+            </ul>
+            <h3>Практика в модуле</h3>
+            <h4>Практикум «Введение в профессию психолог-консультант»</h4>
+            <p>Вы познакомитесь с участниками учебной группы, освоите формат групповой психологической работы, его
+              особенности и правила.</p>
+            <p>В мини-лекциях, упражнениях, обсуждениях и домашних заданиях начнете формировать мышление
+              психолога-консультанта: умение прислушиваться к себе и умение слышать других, наблюдательность,
+              чувствительность, умение отделять факт от аффекта и системную рефлексию; эмоциональный интеллект, эмпатию,
+              психологическую разумность и системную рефлексию</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 2. Мозг и поведение человека</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <h3>Теория</h3>
+            <p>Узнайте больше о современном научном взгляде на психику человека. По каким закономерностям работает
+              восприятие, внимание, мышление, память и эмоции; и какую роль в этом играет мозг и нервная система.</p>
+            <p>Вы изучите:</p>
+            <ul>
+              <li>биологические основы психики и поведения человека,психофизиологические механизмы адаптации и
+                совладания со стрессом,</li>
+              <li>современные высокотехнологичные методы изучения мозга, и последние открытия в области нейронаук,</li>
+              <li>универсальные свойства восприятия, внимания, памяти, мышления, речи и психических состояний,</li>
+              <li>психологию сознания и бессознательного,</li>
+              <li>психологию эмоций и природу эмпатии.</li>
+            </ul>
+            <h3>Практика</h3>
+            <h4>Семинар по общей психологии</h4>
+            <p>Сделаем понятными сложные моменты из лекционного материала. Вы сможете задать собственные вопросы по
+              лекциям или теме в целом, свяжете теорию и личный опыт.</p>
+            <p>Из каждой темы общей психологии мы сделаем конкретные практические выводы для психологического
+              консультирования. Вы увидите, как можно использовать знания общей психологии в работе с клиентами и в
+              вашем собственном развитии как психолога-профессионала.</p>
+            <h4>Семинар «Мозг и поведение человека»</h4>
+            <p>На первом семинаре мы поработаем с атласом головного мозга, чтобы закрепить и визуализировать информацию
+              о строении и функциях разных отделов нервной системы.</p>
+            <p>На втором семинаре поговорим о мифах о работе мозга и затронем один из наиболее интересных вопросов в
+              нейронауке — восстанавливаются ли нервные клетки?</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 3. Основы психологического консультирования</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 4. Психология личности и основы психологической диагностики</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 5. Возрастная психология в консультировании</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 6. Психология семьи и психология сексуальности</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 7. Основы клинической психологии</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 8. Кризисная психологическая помощь</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 9. Современные модальности консультирования</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 10. Начало практики консультирующего психолога</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">Контент</div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <span>Модуль 11. Личный бренд психолога-консультанта</span>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Успешные блогеры и предприниматели-психологи расскажут о личном бренде как инструменте продвижения, о
+              правилах позиционирования себя в социальных сетях, ведении аккаунтов и других составляющих продвижения
+              себя как профессионала в сфере психологии.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+    </div>
+  </section><!-- //progrmsummary -->
+
+
+
+
+  <section class="guideform">
+    <div class="container">
+      <h3 class="guideform__title">
+        <span>Получите <b>гайд</b></span>
+        <span>по профессии</span>
+        <span><b>психолог-консультант</b></span>
+        <img src="/img/psychology/b14-book.png" alt="">
+      </h3>
+      <form action="#">
+        <div class="programfromlead__formwrap flexi">
+          <div class="programfromlead__left">
+            <div class="formvkbutton">
+              Заполнить через VK
+            </div>
+            <div class="programfromlead__grid flexi">
+              <div class="programfromlead__col">
+                <label for="username3">Имя</label>
+                <input type="text" placeholder="Алиса" id="username3">
+              </div>
+              <div class="programfromlead__col">
+                <label for="phone3">Телефон</label>
+                <div class="phoneinp flexi">
+                  <button class="phoneinp__country">
+                    RU
+                  </button>
+                  <div class="phoneinp__code">+7</div>
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone3">
+                </div>
+              </div>
+              <div class="programfromlead__col">
+                <label for="email3">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email3">
+              </div>
+            </div>
+            <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
+                href="#">обработки персональных данных</a></div>
+          </div><!-- //programfromlead__left -->
+          <div class="programfromlead__right">
+            <button class="programfromlead__submit">
+              Получить <br>гайд
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section><!-- //guideform -->
+
+
+
+
+
+
+  <section class="features psy15">
+    <div class="container">
+      <h2 class="title">Вас ждут практические занятия, <br>в <b>мини-группах</b></h2>
+      <div class="features__wrap">
+        <div class="features__left">
+          <video preload="auto" playsinline autoplay loop muted>
+            <source src="/img/psychology/b15-video.mp4">
+          </video>
+        </div>
+        <div class="features__right">
+          <div class="features__subtitle">
+            В формате супервизий и&nbsp;тренингов под&nbsp;руководством практикующего психолога
+          </div>
+          <div class="features__grid">
+            <div class="features__item">
+              <img src="/img/psychology/b15-1.png" alt="">
+              <p>Каждый получит <b>достаточно внимания наставника</b></p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b15-2.png" alt="">
+              <p><b>Участники группы</b> мотивируют и помогают друг другу</p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b15-3.png" alt="">
+              <p>Студенты <b>растут в среде единомышленников</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //psy15 -->
+
+
+
+
+  <section class="features psy16">
+    <div class="container">
+      <h2 class="title">Мы организовали <b>яркую <br>студенческую жизнь</b></h2>
+      <div class="features__wrap">
+        <div class="features__left">
+          <video preload="auto" playsinline autoplay loop muted>
+            <source src="/img/psychology/b15-video.mp4">
+          </video>
+        </div>
+        <div class="features__right">
+          <div class="features__subtitle">
+            В формате супервизий и&nbsp;тренингов под&nbsp;руководством практикующего психолога
+          </div>
+          <div class="features__grid">
+            <div class="features__item">
+              <img src="/img/psychology/b15-1.png" alt="">
+              <div class="features__subtitle">Читальный зал</div>
+              <p>Обсуждаем интересные книги</p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b15-2.png" alt="">
+              <div class="features__subtitle">Киноклуб</div>
+              <p>Обсуждаем фильмы в&nbsp;контексте психологии</p>
+            </div>
+            <div class="features__item">
+              <img src="/img/psychology/b15-3.png" alt="">
+              <div class="features__subtitle">Очные встречи</div>
+              <p>в Москве со студентами и наставниками</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //psy16 -->
+
+
+
+
+  <section class="diplomblock">
+    <div class="container">
+      <h2 class="title">
+        <b>Вы получаете диплом <br>установленного образца</b> <br>
+        о профессиональной переподготовке
+      </h2>
+      <img src="/img/psychology/b17-diplom.jpg" alt="" class="diplomblock__pic">
+      <div class="diplomblock__footer flexi">
+        <p>
+          Каждый выпускник курса может<br>
+          подтвердить свою<br>
+          квалификацию перед клиентами<br>
+          и / или работодателями
+        </p>
+        <a href="#" class="circlebutton">Задать вопрос <br>специалисту</a>
+      </div>
+    </div>
+  </section><!-- //diplomblock -->
+
+
+
+
+
+
+  <section class="stepform">
+    <div class="container">
+      <h2 class="title">Получить консультацию <br>специалиста</h2>
+      <div class="stepform__vector">
+        <p>Оставьте свой <br>номер телефона</p>
+        <p>Наш специалист <br>свяжется с вами</p>
+        <p>Даст подробную <br>информацию о&nbsp;начале <br>учебы на&nbsp;курсе</p>
+      </div>
+      <form action="#">
+        <div class="programfromlead__formwrap flexi">
+          <div class="programfromlead__left">
+            <div class="formvkbutton">
+              Заполнить через VK
+            </div>
+            <div class="programfromlead__grid flexi">
+              <div class="programfromlead__col">
+                <label for="username4">Имя</label>
+                <input type="text" placeholder="Алиса" id="username4">
+              </div>
+              <div class="programfromlead__col">
+                <label for="phone4">Телефон</label>
+                <div class="phoneinp flexi">
+                  <button class="phoneinp__country">
+                    RU
+                  </button>
+                  <div class="phoneinp__code">+7</div>
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone4">
+                </div>
+              </div>
+              <div class="programfromlead__col">
+                <label for="email4">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email4">
+              </div>
+            </div>
+            <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
+                href="#">обработки персональных данных</a></div>
+          </div><!-- //programfromlead__left -->
+          <div class="programfromlead__right">
+            <button class="programfromlead__submit">
+              Сделать <br>выбор
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section><!-- //stepform -->
+
+
+
+
+
+  <section class="timeslot">
+    <div class="container">
+      <h2 class="title">
+        Научим <b>рекламировать свои <br>
+          услуги</b> и <b>привлекать <br>клиентов</b>
+      </h2>
+      <div class="timeslot__box">
+        <img src="/img/psychology/b19-bg.svg" alt="" class="timeslot__bg">
+        <div class="timeslot__text">
+          <p>С вами работает специалист <br>по продвижению <br>и привлечению клиентов</p>
+          <small>начиная с шестого месяца обучения</small>
+        </div>
+        <div class="timeslot__avawrap">
+          <img src="/img/psychology/b19-ava.png" alt="" class="timeslot__ava">
+          <span>с 6 месяца</span>
+        </div>
+        <img src="/img/psychology/b19-matrix.png" alt="" class="timeslot__matrix">
+      </div>
+    </div>
+  </section><!-- //timeslot -->
+
+
+
+
+  <section class="statistic container">
+    <h2 class="title">Поговорим о цифрах</h2>
+    <div class="statistic__grid">
+      <dl class="statistic__item statistic__item--verbg">
+        <dt>15 <img src="img/psychology/b20-star.svg" alt="" class="statistic__star"></dt>
+        <dd>Топ <br>преподавателей</dd>
+      </dl>
+      <dl class="statistic__item statistic__item--verborder">
+        <dt>12</dt>
+        <dd>Месяцев <br>обучения</dd>
+      </dl>
+      <dl class="statistic__item">
+        <dt>150+</dt>
+        <dd>Часов работы с наставниками <br>и супервизорами</dd>
+      </dl>
+      <dl class="statistic__item">
+        <dt>400</dt>
+        <dd>Часов интересных и насыщенных <br>занятий</dd>
+      </dl>
+      <dl class="statistic__item  statistic__item--veryellow">
+        <dt>12/7</dt>
+        <dd>Поддержка студентов во время обучения</dd>
+      </dl>
+    </div>
+  </section>
+
+
+
+
+  <section class="dreams">
+    <div class="container">
+      <h2 class="title">В результате обучения <br><b>вы сможете</b></h2>
+      <div class="dreams__grid">
+        <div class="dreams__item dreams__item--border">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-1.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Разбираться в себе и своих проблемах
+          </div>
+        </div>
+        <div class="dreams__item">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-2.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Начать свою частную практику
+          </div>
+        </div>
+        <div class="dreams__item dreams__item--bg">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-3.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Понимать психологические <br>характеристики разных людей
+          </div>
+        </div>
+        <div class="dreams__item">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-4.svg" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Справляться со стрессами и лучше <br>себя чувствовать
+          </div>
+        </div>
+        <div class="dreams__item">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-5.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Трудоустроиться по новой <br>специальности
+          </div>
+        </div>
+        <div class="dreams__item">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b4-6.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Помогать другим людям справиться <br>с психологическими проблемами
+          </div>
+        </div>
+        <div class="dreams__item">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-7.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Выработать индивидуальный стиль <br>консультирования
+          </div>
+        </div>
+        <div class="dreams__item dreams__item--border">
+          <div class="dreams__iconwrap">
+            <img src="/img/psychology/b21-8.png" alt="">
+          </div>
+          <div class="dreamsltitle">
+            Применять техники для <br>профессионального развития
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //dreams -->
+
+
+
+
+  <section class="quizlink">
+    <div class="container">
+      <h2 class="title">Подходит ли вам профессия <br><b>Психолог-консультант?</b></h2>
+      <div class="quizlink__box">
+        <dl>
+          <dt>7 вопросов</dt>
+          <dd>Пройдите <br>тест из семи <br>вопросов</dd>
+        </dl>
+        <dl>
+          <dt>5000 ₽</dt>
+          <dd>Получите скидку <br>на обучение <br>в 5000 руб.</dd>
+        </dl>
+        <div class="quizlink__action">
+          <a href="#" class="circlebutton">Пройти <br>тест</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- //quizlink -->
+
+
+
+
+  <section class="priceblock">
+    <div class="container">
+      <h2 class="title">Стоимость обучения</h2>
+      <div class="priceblock__row flexi">
+        <div class="priceblock__price">10400 ₽/МЕС</div>
+        <div class="priceblock__descr">
+          <p>Беспроцентная рассрочка на 24 месяца.</p>
+          <p>Первый платеж через 2 месяца.</p>
+        </div>
+      </div>
+      <div class="priceblock__greenprice">От 6250 ₽/МЕС <small>Скидка <b>до 15 марта</b></small></div>
+      <form action="#">
+        <div class="programfromlead__formwrap flexi">
+          <div class="programfromlead__left">
+            <div class="formvkbutton">
+              Заполнить через VK
+            </div>
+            <div class="priceblock__descr flexi">
+              <p><b>Отправьте заявку, чтобы</b> <br>забронировать место</p>
+              <p><b>Осталось:</b> <br>6 мест</p>
+            </div>
+            <div class="programfromlead__grid flexi">
+              <div class="programfromlead__col">
+                <label for="username5">Имя</label>
+                <input type="text" placeholder="Алиса" id="username5">
+              </div>
+              <div class="programfromlead__col">
+                <label for="phone5">Телефон</label>
+                <div class="phoneinp flexi">
+                  <button class="phoneinp__country">
+                    RU
+                  </button>
+                  <div class="phoneinp__code">+7</div>
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone5">
+                </div>
+              </div>
+              <div class="programfromlead__col">
+                <label for="email5">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email5">
+              </div>
+            </div>
+            <a href="#" class="programfromlead__link">У вас есть промокод?</a>
+            <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
+                href="#">обработки персональных данных</a></div>
+          </div><!-- //programfromlead__left -->
+          <div class="programfromlead__right">
+            <button class="programfromlead__submit">
+              Получить <br>консультацию
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section><!-- //priceblock -->
+
+
+
+
+
+  <section class="faqblock container">
+    <h2 class="title">Часто задаваемые вопросы</h2>
+    <div class="faqblock__wrap">
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Какой график обучения? Получится ли совмещать учебу с работой?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Безусловно, обучение новой профессии требует времени. Но мы организовали обучение так, чтобы вам было
+              максимально удобно и просто. Уроки с теоретической информацией вы смотрите у себя в личном кабинете в
+              удобное время. К этим материалам можно будет возвращаться неограниченно.</p>
+            <p>Куратор будет с вами на связи, ответит на все вопросы и поможет в организации процесса обучения. За 1 год
+              вы изучите 250 теоретических видеоуроков, отработаете материал на 150 интерактивных воркшопах, получите
+              300 часов практики в онлайн-мастерской психологического консультирования.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Подойдёт ли мне эта программа?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Программа подойдёт вам не только для общего развития. Мы расскажем не только про саму профессию, но и про
+              подходы и современные методы в работе. Вы научитесь правильно реагировать на разные запросы от своих
+              клиентов.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Я смогу общаться с преподавателями?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Вы будете регулярно общаться с преподавателями на практических занятиях в группе и в чате, получать
+              обратную связь по домашним заданиям и аттестации.</p>
+            <p>Общения будет много — продуктивного и приятного, в среде единомышленников.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>У меня получится работать и зарабатывать после окончания курса?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Психолог-консультант — конкретная, практико-ориентированная профессия, компетенции которой можно освоить
+              при определенном уровне мотивации и включенности.</p>
+            <p>Преподаватели и наставники помогут вам: не только обучат техникам консультирования, но и снимут
+              тревожность перед первыми клиентами. Даже без базового бакалавриата вы сможете начать работать и
+              определиться с направлением дальнейшего профессионального развития и обучения.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Есть ли какие-то требования при поступлении?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Понадобится только диплом о высшем или среднем специальном образовании.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Какие документы я получу после окончания обучения?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>После успешной аттестации вы получаете Диплом о профессиональной переподготовке установленного образца
+              РФ. Это официальный документ, который дает право осуществлять профессиональную деятельность в сфере
+              практической психологии.
+              Каждый выпускник курса получает два международных диплома.
+              Первый диплом <b>IPHM</b> и второй диплом <b>CPD</b></p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Что такое профессиональная переподготовка?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Профессиональная переподготовка — вид дополнительной профессиональной программы с выдачей диплома и
+              присвоением новой квалификации.</p>
+            <p>Эта квалификация дает право заниматься новым видом профессиональной деятельности. Диплом о
+              профессиональной переподготовке на психолога-консультанта имеет значение при трудоустройстве в профильные
+              государственные учреждения.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Как я получу реальный, физический диплом если обучение онлайн?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Вы получите физический, реальный диплом, который мы доставим в любую страну мира. Мы отправим его удобным
+              для вас способом: почта, службы доставки и т.д.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Можно ли адаптировать этот диплом для работы за границей?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>Это можно сделать самостоятельно после окончания обучения в организации, которая занимается адаптацией
+              документов.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+
+      <div class="progrmsummary__item">
+        <div class="progrmsummary__head">
+          <strong>Как проходят практические занятия?</strong>
+          <button class="progrmsummary__plus">+</button>
+        </div>
+        <div class="progrmsummary__contentwrap">
+          <div class="progrmsummary__content">
+            <p>1 раз в неделю у Вас будет проходить практическое занятие, состоящее из:</p>
+            <p>2 часа — воркшопы для закрепления теории,</p>
+            <p>1 час — психологическая работа в группе.</p>
+            <p>Психологические консультации в кругу студентов проводит опытный наставник. Это гарантирует
+              психологическую безопасность каждого участника. Данная методика погружения в консультативный процесс через
+              активное участие или наблюдение эффективна и широко применяема при обучении психологов-консультантов.</p>
+          </div>
+        </div>
+      </div><!-- //item -->
+    </div>
+  </section>
+
+
+
+
+  <section class="talentsyabout">
+    <div class="container">
+      <img src="/img/footer/logo-white.svg" alt="" class="talentsyabout__logo">
+      <dl class="talentsyabout__line1 flexi">
+        <dt>Онлайн-обучение <br>гуманитарным <br>профессиям</dt>
+        <dd>
+          Мы помогаем развивать талант, чтобы вы могли начать заниматься любимым делом и превратили свое увлечение в
+          профессию. Вас ждут самые актуальные подходы к обучению и топ-преподаватели на каждой программе. Мы создаем
+          современный университет, в котором интересно учиться, и заботимся о каждом студенте.
+        </dd>
+      </dl>
+      <div class="talentsyabout__props">
+        <dl class="talentsyabout__prop">
+          <dt>6</dt>
+          <dd>Факультетов</dd>
+        </dl>
+        <dl class="talentsyabout__prop">
+          <dt>20</dt>
+          <dd>Образователь- <br>ных программ</dd>
+        </dl>
+        <dl class="talentsyabout__prop">
+          <dt>70+</dt>
+          <dd>Выдающихся <br>преподавателей</dd>
+        </dl>
+        <dl class="talentsyabout__prop talentsyabout__prop--yellow">
+          <dt>13k <img src="/img/footer/props-heart.svg" alt="" class="talentsyabout__heart"></dt>
+          <dd>Любимых студентов</dd>
+        </dl>
+      </div>
+
+      <div class="talentsyabout__tags">
+        <a href="#" class="talentsyabout__tag">Программа повышения квалификации</a>
+        <a href="#" class="talentsyabout__tag">Практический психолог</a>
+        <a href="" class="talentsyabout__tag">Курс психолог-консультант</a>
+        <a href="" class="talentsyabout__tag">Социальная психология</a>
+        <a href="" class="talentsyabout__tag">Организационная психология</a>
+        <a href="" class="talentsyabout__tag">Дистанционное обучение с присвоением квалификации практический
+          психолог</a>
+        <a href="" class="talentsyabout__tag">Методы психологического консультирования</a>
+        <a href="" class="talentsyabout__tag">Семейное консультирование и психотерапия</a>
+        <a href="" class="talentsyabout__tag">Гештальт-терапия</a>
+        <a href="" class="talentsyabout__tag">Методы психоанализа</a>
+        <a href="" class="talentsyabout__tag">Программа обучения практических психологов</a>
+        <a href="" class="talentsyabout__tag">Психокоррекция девиантного поведения</a>
+        <a href="" class="talentsyabout__tag">Мастер-классы и вебинары</a>
+        <a href="" class="talentsyabout__tag">Программа профессиональной переподготовки психолога</a>
+        <a href="" class="talentsyabout__tag">Психофизиология</a>
+        <a href="" class="talentsyabout__tag">Цена оказания психологических услуг населению</a>
+        <a href="" class="talentsyabout__tag">Индивидуальное консультирование</a>
+        <a href="" class="talentsyabout__tag">Семейные консультации</a>
+        <a href="" class="talentsyabout__tag">Технологии терапии для родителей</a>
+        <a href="" class="talentsyabout__tag">Конфликтология</a>
+        <a href="" class="talentsyabout__tag">Обучение на психолога дистанционно</a>
+      </div>
+      <div class="talentsyabout__action">
+        <button><span>Показать еще</span><i>скрыть</i></button>
+      </div>
+    </div>
+  </section><!-- //talentsyabout -->
+
+
+
+  
+
+  <footer class="footer">
+    <div class="container footerform">
+      <div class="footerform__title">Поможем в выборе!</div>
+      <div class="footerform__sub">
+        Если у вас есть вопросы или вы не знаете что <br>
+        выбрать, оставьте свой номер: мы позвоним, чтобы <br>
+        ответить на все ваши вопросы
+      </div>
+      <form action="#" class="footerform__form flexi">
+        <div class="footerform__formleft flexi">
+          <div class="footerform__forminputs flexi">
+            <div class="footerform__col">
+              <input type="text" placeholder="Имя" name="name">
+            </div>
+            <div class="footerform__col">
+              <input type="tel" placeholder="Телефон" name="phone">
+            </div>
+            <div class="footerform__col">
+              <input type="email" placeholder="Почта" name="mail">
+            </div>
+          </div>
+          <div class="footerform__accept">Нажимая "Отправить" вы соглашаетесь на обработку <a href="#">персональных
+              данных</a></div>
+        </div>
+        <div class="footerform__right">
+          <button class="footerform__submit">Отправить</button>
+        </div>
+      </form>
+    </div><!-- //footerform -->
+
+    <div class="container">
+      <div class="footermiddle flexi">
+        <section class="footermiddle1">
+          <a href="#" class="footermiddle__phone">8 800 775—3768</a>
+          <div class="footermiddle__addr">Москва, Ащеулов пер, д.9</div>
+          <a href="#" class="footermiddle__licence">
+            <img src="/img/footer/licence.jpg" alt="">
+            <span>Государственная <br>лицензия</span>
+          </a>
+          <img src="/img/footer/sk.png" alt="" class="footermiddle__sk">
+        </section>
+        <section class="footermiddle2">
+          <h4 class="footermiddle__title">Факультеты</h4>
+          <div class="footermenu">
+            <ul>
+              <li>
+                <a href="">Моды и стиля</a>
+              </li>
+              <li>
+                <a href="">Современное искусство</a>
+              </li>
+              <li>
+                <a href="">Психология</a>
+              </li>
+              <li>
+                <a href="">Дизайн интерьера</a>
+              </li>
+              <li>
+                <a href="">Астрология</a>
+              </li>
+              <li>
+                <a href="">ЗОЖ</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="footermiddle3">
+          <h4 class="footermiddle__title">О Talentsy</h4>
+          <div class="footermenu">
+            <ul>
+              <li>
+                <a href="">Проекты студентов</a>
+              </li>
+              <li>
+                <a href="">О компании</a>
+              </li>
+              <li>
+                <a href="">Отзывы</a>
+              </li>
+              <li>
+                <a href="">Вакансии</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <a href="">Партнерская программа</a>
+              </li>
+              <li><a href="">Программа лояльности</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footermiddle4">
+          <a href="https://vk.com/talentsyofficial" class="footersoclink" target="_blank">Вконтакте</a>
+          <a href="https://www.youtube.com/channel/UCZCFFjqhDwfI7Bmn7Z_jD0w?view_as=subscriber" class="footersoclink"
+            target="_blank">Ютюб</a>
+          <a href="https://pin.it/64rsuUj" class="footersoclink" target="_blank">Pinterest</a>
+
+          <a href="https://academy-market.com/school-reviews/talentsy" target="_blank" class="acmarket flexi">
+            <div class="acmarket__balls">4.5</div>
+            <div class="acmarket__descr">
+              <span><b>20 отзывов</b> о Talentsy</span>
+              <div class="acmarket__link flexi">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6037 2.93333L8.40318 11H5.40418L10.0107 0H13.2736L18 11H15.001L11.6805 2.93333H11.6037ZM5.99802 2.97396L2.69911 10.9948H0L4.51051 0.109375L5.99802 2.97396Z"
+                    fill="white"></path>
+                </svg>
+                <span>Academy Market</span>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div><!-- //footermiddle -->
+    </div>
+
+    <div class="footerbot container">
+      <div class="footerbot__title">Рассрочка через банки–партнеры</div>
+      <div class="footerbot__banksgrid">
+        <dl>
+          <dt>Тинькофф</dt>
+          <dd>Лицензия ЦБ РФ № 2673 от 24.03.2015</dd>
+        </dl>
+        <dl>
+          <dt>Альфа-Банк</dt>
+          <dd>Лицензия ЦБ РФ № 1326 от 16.01.2015</dd>
+        </dl>
+        <dl>
+          <dt>Почта Банк</dt>
+          <dd>Лицензия ЦБ РФ № 650 от 25.03.2016</dd>
+        </dl>
+        <dl>
+          <dt>СберБанк</dt>
+          <dd>Лицензия ЦБ РФ №1481 от 11.08.2015</dd>
+        </dl>
+      </div>
+      <div class="footerbot__links flexi">
+        <a href="#">Договор оферты</a>
+        <a href="#">Реквизиты и оплата</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Документы образовательной организации</a>
+        <div>Talentsy 2023</div>
+      </div>
+    </div><!-- //footerbot -->
+  </footer>
+
 
 </body>
 
