@@ -1,0 +1,31 @@
+on:
+  push:
+    branches:
+      - release
+name: 🚀 Загрузка вёрстки на тестовый хостинг при пуше
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 15.x, 16.x]
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: 89.47.160.33
+        username: ${{ secrets.ftp_login }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
+        server-dir: /www/a.docc.ru/talentsy/
