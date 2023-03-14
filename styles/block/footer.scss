@@ -1,0 +1,113 @@
+@use '../general/mixins' as *;
+
+.footer{
+  margin-top: 0;
+  background: #fff;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.73;
+
+  a{
+    color: #0153ee;
+    text-decoration: underline;
+
+    &:hover{
+      color: #2571fe;
+    }
+  }
+
+  .container{
+    @include media(l){
+      justify-content: space-between;
+    }
+    @include media(m){
+      flex-flow: column nowrap;
+      align-items: center;
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+
+  .custom-logo-link{
+    width: 240px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-right: 10px;
+    display: block;
+
+    @include media(l){
+      width: 200px;
+      margin-right: 0;
+    }
+    @include media(m){
+      margin: 0 0 10px;
+    }
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.footer2{
+  width: 360px;
+  a{
+    margin-top: 20px;
+    display: block;
+  }
+
+  @include media(l){
+    width: auto;
+    a{
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer3{
+  p{
+    margin-bottom: 20px;
+    @include media(l){
+      margin-bottom: 10px;
+    }
+  }
+  @include media(m){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.footer4{
+  margin-left: auto;
+
+  @include media(l){
+    margin-left: 0;
+  }
+
+  a{
+    color:#000;
+    text-decoration: none;
+
+    &:hover{
+      color:#333;
+    }
+  }
+
+  .hdr__wa{
+    color:#fff;
+
+    @include media(s){
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+
+    &:hover{
+      color:#fff;
+    }
+  }
+}
