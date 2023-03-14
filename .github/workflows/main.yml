@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - release
+      - deploy
 name: 🚀 Загрузка вёрстки на тестовый хостинг при пуше
 jobs:
   web-deploy:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 15.x, 16.x]
+        node-version: [15.x, 16.x]
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
