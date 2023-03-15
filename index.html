@@ -57,7 +57,7 @@
   <!-- /=== === === ШАПКА КОНЕЦ === === === -->
 
 
-  <nav class="breadcrumbs container">
+  <nav class="breadcrumbs container jbm">
     <a href="/">Главная</a>
     <a href="">Факультет психологии</a>
     <span>Обучение на психолога</span>
@@ -66,20 +66,22 @@
 
   <section class="hero">
     <h2 class="hero__small">Курсы по психологии</h2>
-    <div class="hero__h1">
+    <div class="hero__h1 jbm">
       За 1 год сделаем <img src="/img/psychology/b1-sm.svg" alt=""> из вас <br>
       <b>успешного психолога-консультанта</b><br>
       и поможем запустить свою частную <br>практику
     </div>
-    <div class="hero__videowrap">
-      <a href="#" class="hero__overbutton">
+    <div class="hero__videowrap ">
+      <a href="#" class="hero__overbutton circlebutton">
         Стать<br>
         психологом-<br>
         консультатном
       </a>
-      <video class="hero__video" preload="auto" playsinline="" autoplay="" loop="" muted="">
-        <source src="/img/psychology/psycho_main.mp4">
-      </video>
+      <div class="hero__videobox square">
+        <video class="hero__video square__img" preload="auto" playsinline="" autoplay="" loop="" muted="">
+          <source src="/img/psychology/psycho_main.mp4">
+        </video>
+      </div>
     </div>
   </section>
 
@@ -92,7 +94,7 @@
       <div class="iphone__wrap flexi">
         <aside class="iphone__right">
           <img src="/img/psychology/b2-mock.png" alt="" class="iphone__mock">
-          <video style="object-fit: cover; background-size: cover; width: 299px; height: 228px" preload="auto"
+          <video preload="auto"
             playsinline="" autoplay="" loop="" muted="" class="iphone__mockvideo">
             <source src="/img/psychology/b2-vid.mp4">
           </video>
@@ -112,7 +114,7 @@
           <div class="iphone__prop">
             <img src="/img/psychology/b2-3.svg" alt="" class="iphone__propicon">
             <div class="iphone__proptitle">Часов обучения</div>
-            <p>1200 академических часов, 250 видеолекций, 150+ часов семинарских и практических занятий за 50 недель
+            <p>1200 академических часов, 250&nbsp;видеолекций, 150+ часов семинарских и практических занятий за 50 недель
               обучения</p>
           </div>
           <div class="iphone__prop">
@@ -135,9 +137,10 @@
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
             <div class="formvkbutton">
-              Заполнить через VK
+              <img src="/img/ui/vk.svg" alt="">
+              <span>Заполнить через VK</span>
             </div>
-            <div class="programfromlead__grid flexi">
+            <div class="programfromlead__grid">
               <div class="programfromlead__col">
                 <label for="username1">Имя</label>
                 <input type="text" placeholder="Алиса" id="username1">
@@ -145,8 +148,8 @@
               <div class="programfromlead__col">
                 <label for="phone1">Телефон</label>
                 <div class="phoneinp flexi">
-                  <button class="phoneinp__country">
-                    RU
+                  <button class="phoneinp__country" type="button">
+                    <img src="/img/ui/flag-ru.svg" alt="">
                   </button>
                   <div class="phoneinp__code">+7</div>
                   <input type="tel" placeholder="(999) 999-99-99" id="phone1">
@@ -161,7 +164,7 @@
                 href="#">обработки персональных данных</a></div>
           </div><!-- //programfromlead__left -->
           <div class="programfromlead__right">
-            <button class="programfromlead__submit">
+            <button class="programfromlead__submit circlebutton">
               Получить <br>программу
             </button>
           </div>

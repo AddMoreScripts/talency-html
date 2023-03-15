@@ -23,7 +23,7 @@ body {
   }
 }
 
-.jb{
+.jbm{
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -280,5 +280,67 @@ body {
 
   &--next img{
     transform: rotate(180deg);
+  }
+}
+
+
+
+.circlebutton{
+  width: 222px;
+  height: 222px;
+  text-align: left;
+  padding: 20px 30px 58px 40px;
+  position: relative;
+  background: #000;
+  color:#fff;
+  font-size: 20px;
+  line-height: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: flex-end;
+  border-radius: 200px;
+  border:none;
+  appearance: none;
+  transition:color 0.4s ease;
+
+  &::after{
+    content:"";
+    width: 63px;
+    height: 17px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    background: url(/img/ui/circle-arrow.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &:hover::after{
+    transform: translateX(10px);
+  }
+
+  &:hover{
+    color:#aaa;
+  }
+}
+
+
+.title{
+  font-size: 66px;
+  line-height: 1;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  i{
+    font-style: normal;
+  }
+
+  b{
+    color:var(--psy-accent);
+    font-weight: 600;
   }
 }
