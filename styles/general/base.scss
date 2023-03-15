@@ -259,27 +259,36 @@ body {
 
 
 .ctrl{
-  width: 70px;
-  height: 70px;
-  background-color: #0153ee;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
   border-radius: 100px;
   appearance: none;
   border:none;
   padding: 0;
   cursor: pointer;
-
-  &:hover{
-    background-color: #2571fe;
-  }
+  border:1px solid #000;
+  transition: background-color 0.5s ease;
 
   img{
     display: block;
-    width: 16px;
+    width: 18px;
     margin: auto;
+    transition: filter 0.5s ease;
+    position: relative;
+    left: -2px;
+  }
+
+  &:hover{
+    background-color: #000;
+    img{
+      filter: invert(1);
+    }
   }
 
   &--next img{
     transform: rotate(180deg);
+    left: 2px;
   }
 }
 
