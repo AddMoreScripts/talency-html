@@ -1137,7 +1137,7 @@
   <section class="quizlink">
     <div class="container">
       <h2 class="title">Подходит ли вам профессия <br><b>Психолог-консультант?</b></h2>
-      <div class="quizlink__box">
+      <div class="quizlink__box flexi">
         <dl>
           <dt>7 вопросов</dt>
           <dd>Пройдите <br>тест из семи <br>вопросов</dd>
@@ -1146,7 +1146,7 @@
           <dt>5000 ₽</dt>
           <dd>Получите скидку <br>на обучение <br>в 5000 руб.</dd>
         </dl>
-        <div class="quizlink__action">
+        <div class="quizlink__action flexi">
           <a href="#" class="circlebutton">Пройти <br>тест</a>
         </div>
       </div>
@@ -1160,50 +1160,49 @@
     <div class="container">
       <h2 class="title">Стоимость обучения</h2>
       <div class="priceblock__row flexi">
-        <div class="priceblock__price">10400 ₽/МЕС</div>
+        <div class="priceblock__price jbm"><span>10400</span><span>₽/МЕС</span></div>
         <div class="priceblock__descr">
           <p>Беспроцентная рассрочка на 24 месяца.</p>
           <p>Первый платеж через 2 месяца.</p>
         </div>
       </div>
-      <div class="priceblock__greenprice">От 6250 ₽/МЕС <small>Скидка <b>до 15 марта</b></small></div>
+      <div class="priceblock__greenprice jbm">От 6250 ₽/МЕС <small>Скидка <b>до 15 марта</b></small></div>
       <form action="#">
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
+            <div class="priceblock__formdescr flexi">
+              <p><b>Отправьте заявку, чтобы</b> <br>забронировать место</p>
+              <p><b>Осталось:</b> <br>6 мест</p>
+            </div>
             <div class="formvkbutton">
               <img src="/img/ui/vk.svg" alt="">
               <span>Заполнить через VK</span>
             </div>
-            <div class="priceblock__descr flexi">
-              <p><b>Отправьте заявку, чтобы</b> <br>забронировать место</p>
-              <p><b>Осталось:</b> <br>6 мест</p>
-            </div>
-            <div class="programfromlead__grid flexi">
+            <div class="programfromlead__grid">
               <div class="programfromlead__col">
-                <label for="username5">Имя</label>
-                <input type="text" placeholder="Алиса" id="username5">
+                <label for="username1">Имя</label>
+                <input type="text" placeholder="Алиса" id="username1">
               </div>
               <div class="programfromlead__col">
-                <label for="phone5">Телефон</label>
+                <label for="phone1">Телефон</label>
                 <div class="phoneinp flexi">
-                  <button class="phoneinp__country">
-                    RU
+                  <button class="phoneinp__country" type="button">
+                    <img src="/img/ui/flag-ru.svg" alt="">
                   </button>
                   <div class="phoneinp__code">+7</div>
-                  <input type="tel" placeholder="(999) 999-99-99" id="phone5">
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone1">
                 </div>
               </div>
               <div class="programfromlead__col">
-                <label for="email5">Почта</label>
-                <input type="email" placeholder="hello@mail.ru" id="email5">
+                <label for="email1">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email1">
               </div>
             </div>
-            <a href="#" class="programfromlead__link">У вас есть промокод?</a>
             <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
                 href="#">обработки персональных данных</a></div>
           </div><!-- //programfromlead__left -->
           <div class="programfromlead__right">
-            <button class="programfromlead__submit">
+            <button class="programfromlead__submit circlebutton">
               Получить <br>консультацию
             </button>
           </div>
@@ -1216,9 +1215,9 @@
 
 
 
-  <section class="faqblock container">
+  <section class="faqblock">
     <h2 class="title">Часто задаваемые вопросы</h2>
-    <div class="faqblock__wrap">
+    <div class="faqblock__wrap container">
       <div class="progrmsummary__item">
         <div class="progrmsummary__head">
           <strong>Какой график обучения? Получится ли совмещать учебу с работой?</strong>
