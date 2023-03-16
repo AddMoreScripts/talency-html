@@ -5,9 +5,9 @@
   --vertical: 20px;
 
   p:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: var(--vertical);
     @include media(l) {
-      margin-bottom: 12px;
+      margin-bottom: calc(var(--vertical) - 8px);
     }
   }
   strong{
@@ -45,7 +45,7 @@
   p a,
   li a{
     text-decoration: underline;
-    color: #9747FF;
+    color: #000;
     &:hover{
       color:#000 ;
     }
@@ -298,8 +298,8 @@
 
 
   ul{
-    padding: 5px 0 0 10px;
-    margin-bottom: calc(30px - 0.3em);
+    padding: 0px 0 0 10px;
+    margin-bottom: calc(var(--vertical) - 0.3em);
     list-style: none;
     @include media(l) {
       padding-left: 15px;
@@ -308,7 +308,7 @@
       display: block;
       padding-left: 16px;
       position: relative;
-      margin-bottom: 0.43em;
+      margin-bottom: 0.3em;
       ul{
         margin: 0;
         padding-left: 13px;
@@ -318,24 +318,25 @@
   ul li:before{
     position: absolute;
     content: "";
-    top: 12px;
+    top: 11px;
+    border-radius: 10px;
     left: 0;
     font-size: 4px;
     width: 6px;
     height: 6px;
-    background: #9747FF;
+    background: #555;
     @include media(l) {
       top: 9px;
     }
   }
 
   ol{
-    margin-bottom: calc(30px - 0.3em);
+    margin-bottom: calc(var(--vertical) - 0.3em);
     padding-left: 25px;
     padding-top: 5px;
     ::marker{
       font-weight: 600;
-      color: #9747FF;
+      color: #000;
     }
     @include media(l) {
       padding-left: 28px;

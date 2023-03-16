@@ -25,6 +25,10 @@ export const initSliders = () => {
 
   new Swiper('.js-team-slider', {
     loop: false,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     spaceBetween: 0,
     slidesPerView: 1,
     navigation: false,

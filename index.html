@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Manrope:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Manrope:wght@400;700;800&display=swap"
     rel="stylesheet">
 
   <script type="module" src="./js/main.js"></script>
@@ -531,40 +531,43 @@
       <h2 class="title">Возникли вопросы?</h2>
       <div class="stepform__vector">
         <p>Оставьте свой <br>номер телефона</p>
+        <span class="stepform__arrow"></span>
         <p>Наш специалист <br>свяжется с вами</p>
-        <p>Даст подробную информацию о&nbsp;начале учебы на&nbsp;курсе</p>
+        <span class="stepform__arrow"></span>
+        <p>Даст подробную информацию <br>о&nbsp;начале учебы на&nbsp;курсе</p>
       </div>
       <form action="#">
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
             <div class="formvkbutton">
-              Заполнить через VK
+              <img src="/img/ui/vk.svg" alt="">
+              <span>Заполнить через VK</span>
             </div>
-            <div class="programfromlead__grid flexi">
+            <div class="programfromlead__grid">
               <div class="programfromlead__col">
-                <label for="username2">Имя</label>
-                <input type="text" placeholder="Алиса" id="username2">
+                <label for="username1">Имя</label>
+                <input type="text" placeholder="Алиса" id="username1">
               </div>
               <div class="programfromlead__col">
-                <label for="phone2">Телефон</label>
+                <label for="phone1">Телефон</label>
                 <div class="phoneinp flexi">
-                  <button class="phoneinp__country">
-                    RU
+                  <button class="phoneinp__country" type="button">
+                    <img src="/img/ui/flag-ru.svg" alt="">
                   </button>
                   <div class="phoneinp__code">+7</div>
-                  <input type="tel" placeholder="(999) 999-99-99" id="phone2">
+                  <input type="tel" placeholder="(999) 999-99-99" id="phone1">
                 </div>
               </div>
               <div class="programfromlead__col">
-                <label for="email2">Почта</label>
-                <input type="email" placeholder="hello@mail.ru" id="email2">
+                <label for="email1">Почта</label>
+                <input type="email" placeholder="hello@mail.ru" id="email1">
               </div>
             </div>
             <div class="accept">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и политикой <a
                 href="#">обработки персональных данных</a></div>
           </div><!-- //programfromlead__left -->
           <div class="programfromlead__right">
-            <button class="programfromlead__submit">
+            <button class="programfromlead__submit circlebutton">
               Получить <br>консультацию
             </button>
           </div>
@@ -594,7 +597,7 @@
           <div class="features__grid">
             <div class="features__item">
               <img src="/img/psychology/b12-1.png" alt="">
-              <p>Программа разработана <b>на основе ФГОС ВО 370301 «Психология»</b>, и соответствует <b>профессиональным
+              <p>Программа разработана <br><b>на основе ФГОС ВО 370301 «Психология»</b>, и&nbsp;соответствует <b>профессиональным
                   стандартам</b></p>
             </div>
             <div class="features__item">
@@ -621,13 +624,13 @@
   <section class="progrmsummary container">
     <h2 class="title">Программа обучения</h2>
     <div class="progrmsummary__wrap">
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="1">
+        <div class="progrmsummary__head" data-hideopen="1">
           <span>Модуль 1. Знакомство профессией психолог-консультант</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
-          <div class="progrmsummary__content">
+        <div class="progrmsummary__contentwrap" data-hidebox="1">
+          <div class="progrmsummary__content textcontent">
             <h3>Теория</h3>
             <p>Погрузитесь в основы психологии, узнайте о её возникновении и популярных психологических практиках.</p>
             <p>Улучшите ваши личные навыки, полезные в работе практикующего психолога.</p>
@@ -650,13 +653,13 @@
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="2">
+        <div class="progrmsummary__head" data-hideopen="2">
           <span>Модуль 2. Мозг и поведение человека</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
-          <div class="progrmsummary__content">
+        <div class="progrmsummary__contentwrap" data-hidebox="2">
+          <div class="progrmsummary__content textcontent">
             <h3>Теория</h3>
             <p>Узнайте больше о современном научном взгляде на психику человека. По каким закономерностям работает
               восприятие, внимание, мышление, память и эмоции; и какую роль в этом играет мозг и нервная система.</p>
@@ -685,92 +688,92 @@
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="3">
+        <div class="progrmsummary__head" data-hideopen="3">
           <span>Модуль 3. Основы психологического консультирования</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="3">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="4">
+        <div class="progrmsummary__head" data-hideopen="4">
           <span>Модуль 4. Психология личности и основы психологической диагностики</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="4">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="5">
+        <div class="progrmsummary__head" data-hideopen="5">
           <span>Модуль 5. Возрастная психология в консультировании</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="5">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="6">
+        <div class="progrmsummary__head" data-hideopen="6">
           <span>Модуль 6. Психология семьи и психология сексуальности</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="6">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="7">
+        <div class="progrmsummary__head" data-hideopen="7">
           <span>Модуль 7. Основы клинической психологии</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="7">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="8">
+        <div class="progrmsummary__head" data-hideopen="8">
           <span>Модуль 8. Кризисная психологическая помощь</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="8">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="9">
+        <div class="progrmsummary__head" data-hideopen="9">
           <span>Модуль 9. Современные модальности консультирования</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="9">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="10">
+        <div class="progrmsummary__head" data-hideopen="10">
           <span>Модуль 10. Начало практики консультирующего психолога</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="10">
           <div class="progrmsummary__content">Контент</div>
         </div>
       </div><!-- //item -->
 
-      <div class="progrmsummary__item">
-        <div class="progrmsummary__head">
+      <div class="progrmsummary__item" data-hidewrap="11">
+        <div class="progrmsummary__head" data-hideopen="11">
           <span>Модуль 11. Личный бренд психолога-консультанта</span>
           <button class="progrmsummary__plus">+</button>
         </div>
-        <div class="progrmsummary__contentwrap">
+        <div class="progrmsummary__contentwrap" data-hidebox="11">
           <div class="progrmsummary__content">
             <p>Успешные блогеры и предприниматели-психологи расскажут о личном бренде как инструменте продвижения, о
               правилах позиционирования себя в социальных сетях, ведении аккаунтов и других составляющих продвижения
@@ -786,7 +789,7 @@
 
   <section class="guideform">
     <div class="container">
-      <h3 class="guideform__title">
+      <h3 class="guideform__title title">
         <span>Получите <b>гайд</b></span>
         <span>по профессии</span>
         <span><b>психолог-консультант</b></span>
@@ -796,7 +799,8 @@
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
             <div class="formvkbutton">
-              Заполнить через VK
+              <img src="/img/ui/vk.svg" alt="">
+              <span>Заполнить через VK</span>
             </div>
             <div class="programfromlead__grid flexi">
               <div class="programfromlead__col">
@@ -806,8 +810,8 @@
               <div class="programfromlead__col">
                 <label for="phone3">Телефон</label>
                 <div class="phoneinp flexi">
-                  <button class="phoneinp__country">
-                    RU
+                  <button class="phoneinp__country" type="button">
+                    <img src="/img/ui/flag-ru.svg" alt="">
                   </button>
                   <div class="phoneinp__code">+7</div>
                   <input type="tel" placeholder="(999) 999-99-99" id="phone3">
@@ -822,7 +826,7 @@
                 href="#">обработки персональных данных</a></div>
           </div><!-- //programfromlead__left -->
           <div class="programfromlead__right">
-            <button class="programfromlead__submit">
+            <button class="programfromlead__submit circlebutton">
               Получить <br>гайд
             </button>
           </div>
@@ -838,7 +842,7 @@
 
   <section class="features psy15">
     <div class="container">
-      <h2 class="title">Вас ждут практические занятия, <br>в <b>мини-группах</b></h2>
+      <h2 class="title">Вас ждут практические <br>занятия, в <b>мини-группах</b></h2>
       <div class="features__wrap">
         <div class="features__left">
           <video preload="auto" playsinline autoplay loop muted>
@@ -847,12 +851,15 @@
         </div>
         <div class="features__right">
           <div class="features__subtitle">
-            В формате супервизий и&nbsp;тренингов под&nbsp;руководством практикующего психолога
+            В формате супервизий <br>
+            и&nbsp;тренингов <br>
+            под&nbsp;руководством <br>
+            практикующего психолога
           </div>
           <div class="features__grid">
             <div class="features__item">
               <img src="/img/psychology/b15-1.png" alt="">
-              <p>Каждый получит <b>достаточно внимания наставника</b></p>
+              <p>Каждый получит <br><b>достаточно внимания наставника</b></p>
             </div>
             <div class="features__item">
               <img src="/img/psychology/b15-2.png" alt="">
@@ -876,27 +883,22 @@
       <h2 class="title">Мы организовали <b>яркую <br>студенческую жизнь</b></h2>
       <div class="features__wrap">
         <div class="features__left">
-          <video preload="auto" playsinline autoplay loop muted>
-            <source src="/img/psychology/b15-video.mp4">
-          </video>
+
         </div>
         <div class="features__right">
-          <div class="features__subtitle">
-            В формате супервизий и&nbsp;тренингов под&nbsp;руководством практикующего психолога
-          </div>
           <div class="features__grid">
             <div class="features__item">
-              <img src="/img/psychology/b15-1.png" alt="">
+              <img src="/img/psychology/b16-1.jpg" alt="">
               <div class="features__subtitle">Читальный зал</div>
-              <p>Обсуждаем интересные книги</p>
+              <p>Обсуждаем интересные <br>книги</p>
             </div>
             <div class="features__item">
-              <img src="/img/psychology/b15-2.png" alt="">
+              <img src="/img/psychology/b16-2.jpg" alt="">
               <div class="features__subtitle">Киноклуб</div>
               <p>Обсуждаем фильмы в&nbsp;контексте психологии</p>
             </div>
             <div class="features__item">
-              <img src="/img/psychology/b15-3.png" alt="">
+              <img src="/img/psychology/b16-3.png" alt="">
               <div class="features__subtitle">Очные встречи</div>
               <p>в Москве со студентами и наставниками</p>
             </div>
@@ -945,7 +947,8 @@
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
             <div class="formvkbutton">
-              Заполнить через VK
+              <img src="/img/ui/vk.svg" alt="">
+              <span>Заполнить через VK</span>
             </div>
             <div class="programfromlead__grid flexi">
               <div class="programfromlead__col">
@@ -955,8 +958,8 @@
               <div class="programfromlead__col">
                 <label for="phone4">Телефон</label>
                 <div class="phoneinp flexi">
-                  <button class="phoneinp__country">
-                    RU
+                  <button class="phoneinp__country" type="button">
+                    <img src="/img/ui/flag-ru.svg" alt="">
                   </button>
                   <div class="phoneinp__code">+7</div>
                   <input type="tel" placeholder="(999) 999-99-99" id="phone4">
@@ -1083,7 +1086,7 @@
         </div>
         <div class="dreams__item">
           <div class="dreams__iconwrap">
-            <img src="/img/psychology/b4-6.png" alt="">
+            <img src="/img/psychology/b4-6.jpg" alt="">
           </div>
           <div class="dreamsltitle">
             Помогать другим людям справиться <br>с психологическими проблемами
@@ -1149,7 +1152,8 @@
         <div class="programfromlead__formwrap flexi">
           <div class="programfromlead__left">
             <div class="formvkbutton">
-              Заполнить через VK
+              <img src="/img/ui/vk.svg" alt="">
+              <span>Заполнить через VK</span>
             </div>
             <div class="priceblock__descr flexi">
               <p><b>Отправьте заявку, чтобы</b> <br>забронировать место</p>
