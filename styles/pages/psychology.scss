@@ -876,16 +876,263 @@
     }
   }
 
+  .features__left{
+    img{
+      display: block;
+      width: 100%;
+      transform: translateX(-20px);
+    }
+  }
   .features__grid{
     padding-top: 170px;
-
-  }
-  .features__item{
-
   }
   .features__subtitle{
     opacity: 1;
     margin-bottom: 15px;
     color:#fff;
+  }
+}
+
+
+
+
+
+
+
+.diplomblock{
+  margin-bottom: 130px;
+
+  &__sub{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &__pic{
+    display: block;
+    width: 818px;
+    margin: 55px auto 0;
+  }
+  &__footer{
+    max-width: 760px;
+    position: relative;
+    z-index: 10;
+    margin: -15px auto 0;
+    font-size: 22px;
+    line-height: 28px;
+    color:#828282;
+    justify-content: space-between;
+    align-items: center;
+
+    b{
+      color:#000;
+      font-weight: 400;
+    }
+  }
+}
+
+
+
+
+
+.psy18{
+  background-color: #f0f0f0;
+  padding: 100px 0 120px;
+  margin-bottom: 0;
+
+  .programfromlead__formwrap{
+    --bg:#fff;
+  }
+}
+
+
+
+
+
+.timeslot{
+  background-color: #001427;
+  padding-top: 140px;
+  padding-bottom: 145px;
+  margin-bottom: 145px;
+  color:#fff;
+  overflow: hidden;
+
+  .title{
+    color:#fff;
+    b{
+      color:#ffc800;
+    }
+  }
+
+  &__box{
+    position: relative;
+    width: 100%;
+    margin-top: 65px;
+    color: #ffc800;
+
+    &::before{
+      content:"";
+      width: 2000px;
+      height: 1px;
+      background: #368048;
+      position: absolute;
+      left: 0;
+      bottom: 26px;
+    }
+  }
+
+  &__bg{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__over{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    justify-content: space-between;
+
+  }
+
+  &__text{
+    font-size: 26px;
+    line-height: 31px;
+
+    small{
+      display: block;
+      color:#fff;
+      font-size: 20px;
+      line-height: 25px;
+      margin-top: 40px;
+    }
+  }
+
+  &__avawrap{
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 72px);
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__matrix{
+    width: 228px;
+    height: auto;
+    display: block;
+    margin-right: 67px;
+    margin-top: 7px;
+  }
+
+  &__bot{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1;
+    margin-top: 17px;
+    font-weight: 600;
+    color: #ffc800
+  }
+}
+
+
+
+
+
+
+.statistic{
+  margin-bottom: 145px;
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-top: 60px;
+  }
+  &__item{
+    min-width: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 1.25;
+    background-color: #f0f0f0;
+    padding: 35px;
+    min-height: 260px;
+
+    dt{
+      margin-bottom: auto;
+      font-size: 66px;
+      line-height: 1;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      color:var(--psy-accent);
+    }
+    dd{
+      margin-top: 45px;
+    }
+
+    &--verbg{
+      color:#fff;
+      background-color: var(--psy-accent);
+
+      dt{
+        color:#fff;
+      }
+    }
+
+    &--verborder{
+      border:1px solid var(--psy-accent);
+      background-color: #fff;
+    }
+
+    &--veryellow{
+      background-color: #ffc800;
+      color:#000;
+
+      dt{
+        color:#000;
+      }
+    }
+
+    &__star{
+      width: 48px;
+      display: inline-block;
+    }
+  }
+}
+.psy20 .statistic__item:nth-child(3),
+.psy20 .statistic__item:nth-child(4),
+.psy20 .statistic__item:nth-child(5){
+  grid-column: span 2;
+}
+
+
+
+
+
+.psy21{
+  background: #f0f0f0;
+  padding-top: 140px;
+  padding-bottom: 160px;
+  margin-bottom: 145px;
+  .title{
+    text-align: center;
+  }
+  .dreams__item{
+    background-color: #fff;
+    justify-content: space-between;
   }
 }
