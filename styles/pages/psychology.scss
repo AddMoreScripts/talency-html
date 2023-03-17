@@ -1299,7 +1299,7 @@
 .faqblock{
   background-color: #ededed;
   padding-top: 145px;
-  padding-bottom: 145px;
+  padding-bottom: 95px;
 
   &__wrap{
     margin-top: 60px;
@@ -1309,9 +1309,177 @@
     margin-bottom: 6px;
     background: #fff;
     margin-bottom: 4px;
+    color:#000;
   }
 
   .progrmsummary__head strong{
     font-weight: 700;
+  }
+}
+
+
+
+
+
+.talentsyabout{
+  background: #001427;
+  color:#fff;
+  padding-top: 145px;
+  padding-bottom: 50px;
+
+  &__logo{
+    display: block;
+    width: 228px;
+    margin-bottom: 50px;
+  }
+
+  &__line1{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 50px;
+
+    dt{
+      font-size: 26px;
+      line-height: 29px;
+      flex-shrink: 0;
+      margin-right: 175px;
+    }
+    dt{
+      flex-grow: 1;
+    }
+  }
+
+  &__props{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    margin-bottom: 225px;
+  }
+
+  &__prop{
+    min-width: 0;
+    min-height: 260px;
+    border-radius: 20px;
+    background-color: #33475b;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 55px 35px 35px;
+    font-size: 20px;
+    line-height: 25px;
+
+    dt{
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 66px;
+      line-height: 1;
+      margin-bottom: auto;
+      white-space: nowrap;
+    }
+
+    &--yellow{
+      background-color: #ffc800;
+      color:#000;
+    }
+  }
+
+  &__heart{
+    width: 48px;
+    display: inline-block;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  &__tags{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: flex-start;
+  }
+
+  &__more{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+
+  .is-opened &__more{
+    height: auto;
+  }
+
+  &__tag{
+    min-height: 80px;
+    border-radius: 20px;
+    background-color: #0c1f31;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 17px 15px 20px;
+    color:#fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition:background-color 0.4s ease;
+    font-size: 16px;
+    line-height: 21px;
+
+    &::after{
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      flex-shrink: 0;
+      content:"";
+      display: block;
+      background-color: #1d354d;
+      margin-left: 8px;
+      background: url(/img/psychology/b25-arrow.svg) no-repeat;
+      background-size: contain;
+    }
+
+    &:hover{
+      color:#fff;
+      background-color: #0f273e;
+    }
+  }
+
+  &__action{
+    margin-top: 35px;
+    text-align: center;
+
+    button{
+      appearance: none;
+      background: none;
+      cursor: pointer;
+      color: #32475a;
+      font-weight: 600;
+      font-family: inherit;
+      line-height: 1;
+      font-size: 17px;
+      cursor: pointer;
+      border:none;
+
+      &:hover{
+        color:#fff;
+      }
+
+      i{
+        font-style: normal;
+        display: none;
+      }
+    }
+  }
+
+  .is-opened + &__action{
+    button i{
+      display: block;
+    }
+    button span{
+      display: none;
+    }
   }
 }
