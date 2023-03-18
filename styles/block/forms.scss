@@ -18,6 +18,18 @@
   justify-content: center;
   font-size: 18px;
 
+  @include media(l){
+    position: relative;
+    left: auto;
+    top: auto;
+    display: inline-flex;
+    margin-bottom: 25px;
+    font-size: 15px;
+    height: 36px;
+    padding: 0 15px;
+    border-radius: 5px;
+  }
+
   &:hover {
     background-color: hsl(202, 100%, 45%);
   }
@@ -25,6 +37,10 @@
     flex-shrink: 0;
     width: 28px;
     margin-right: 10px;
+
+    @include media(l){
+      width: 20px;
+    }
   }
 }
 
@@ -50,6 +66,10 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+
+    @include media(l){
+      padding-left: 0;
+    }
 
     &::after {
       display: inline-block;
@@ -79,6 +99,12 @@
     flex-shrink: 0;
     margin-left: 5px;
     margin-right: 6px;
+
+    @include media(l){
+      font-size: 16px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
   }
 }
 
@@ -87,6 +113,12 @@
   line-height: 19px;
   color: #8e8e8e;
   margin-top: 30px;
+
+  @include media(l){
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
 
   a {
     text-decoration: underline;

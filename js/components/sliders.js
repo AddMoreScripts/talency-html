@@ -14,7 +14,7 @@ export const initSliders = () => {
     pagination: false,
     breakpoints: {
       767 : {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       1199: {
         spaceBetween: 30,
@@ -37,6 +37,7 @@ export const initSliders = () => {
     slidesPerView: 1,
     navigation: false,
     pagination: false,
+    autoHeight: true,
   });
 
   const teamblock = document.querySelector('.teamblock');

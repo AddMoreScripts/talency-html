@@ -2,6 +2,12 @@
 
 :root {
   --psy-accent: #27b783;
+  --blockspace: 100px;
+  --iconsize:144px;
+
+  @include media(l){
+    --iconsize: 100px;
+  }
 }
 
 .breadcrumbs {
@@ -13,6 +19,11 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+
+  @include media(l){
+    font-size: 14px;
+    margin-top: 20px;
+  }
 
   a {
     display: flex;
@@ -40,6 +51,11 @@
   margin-bottom: 180px;
   text-align: center;
 
+  @include media(l){
+    margin-top: var(--blockspace);
+    margin-bottom: var(--blockspace);
+  }
+
   &__small {
     font-size: 20px;
     line-height: 1;
@@ -53,6 +69,11 @@
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 15px;
+
+    @include media(l){
+      font-size: 50px;
+      line-height: 1.1;
+    }
 
     img {
       width: 119px;
@@ -69,9 +90,13 @@
   &__videowrap {
     position: relative;
     width: 1300px;
-    max-width: 100%;
+    max-width: calc(100% - 30px);
     height: 600px;
     margin: 0 auto;
+
+    @include media(l){
+      height: auto;
+    }
   }
 
   &__videobox {
@@ -88,6 +113,10 @@
 
 .iphone {
   margin-bottom: 145px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
 
   .title-dot {
     display: inline-block;
@@ -106,7 +135,6 @@
         transform: translateY(0);
       }
     }
-
     &::after {
       position: absolute;
       content: "";
@@ -125,6 +153,10 @@
     display: grid;
     grid-template-columns: 1fr 364px;
     grid-gap: 30px;
+
+    @include media(l){
+      grid-template-columns: 1fr 280px;
+    }
   }
 
   &__right {
@@ -152,9 +184,14 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 80px 40px;
+    grid-gap: 80px 20px;
     font-size: 20px;
     line-height: 1.25;
+
+    @include media(l){
+      grid-gap: 60px 30px;
+      font-size: 16px;
+    }
   }
 
   &__prop {
@@ -162,15 +199,24 @@
   }
 
   &__propicon {
-    height: 144px;
+    height: var(--iconsize);
     width: auto;
     margin-bottom: 20px;
+
+    @include media(l){
+      margin-bottom: 10px;
+    }
   }
 
   &__proptitle {
     font-size: 26px;
     line-height: 1.2;
     margin-bottom: 12px;
+
+    @include media(l){
+      font-size: 20px;
+      font-weight: 500;
+    }
   }
 
   p {
@@ -184,6 +230,12 @@
   padding-bottom: 145px;
   margin-bottom: 150px;
 
+  @include media(l){
+    padding-bottom: var(--blockspace);
+    padding-top: var(--blockspace);
+    margin-bottom: var(--blockspace);
+  }
+
   .title {
     text-align: left;
   }
@@ -196,16 +248,30 @@
     position: relative;
     border-radius: 20px;
     background-color: var(--bg);
+
+    @include media(l){
+      margin-top: 40px;
+      padding: 35px 25px;
+    }
   }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 
+    @include media(l){
+      grid-gap: 20px;
+    }
+
     label {
       display: block;
       font-size: 17px;
       line-height: 23px;
+
+      @include media(l){
+        font-size: 15px;
+        line-height: 1;
+      }
     }
 
     input[type="text"],
@@ -220,6 +286,11 @@
       font-weight: 400;
       color: #000;
       width: 100%;
+
+      @include media(l){
+        font-size: 16px;
+        height: 48px;
+      }
     }
   }
 
@@ -230,11 +301,21 @@
   &__right {
     margin-left: 40px;
     flex-shrink: 0;
+
+    @include media(l){
+      margin-left: 20px;
+    }
   }
 
   &__submit {
     width: 199px;
     height: 199px;
+
+    @include media(l){
+      width: 180px;
+      height: 180px;
+      padding-bottom: 40px;
+    }
   }
 }
 
@@ -246,6 +327,10 @@
 .dreams {
   margin-bottom: 130px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   .title {
     text-align: left;
   }
@@ -255,6 +340,11 @@
     display: grid;
     grid-gap: 40px;
     grid-template-columns: 1fr 1fr;
+
+    @include media(l){
+      margin-top: 30px;
+      grid-gap: 20px;
+    }
   }
 
   &__item {
@@ -270,16 +360,25 @@
     line-height: 1.2;
     position: relative;
 
+    @include media(l){
+      font-size: 20px;
+      padding: 30px;
+    }
+
     &--border {
       border: 1px solid var(--psy-accent);
     }
   }
 
   &__iconwrap {
-    height: 144px;
+    height: var(--iconsize);
     border-radius: 72px;
     margin-left: auto;
     margin-bottom: 60px;
+
+    @include media(l){
+      margin-bottom: 30px;
+    }
 
     img {
       display: block;
@@ -301,6 +400,7 @@
         border-radius: 20px;
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
     .dreamsltitle {
@@ -316,6 +416,10 @@
 }
 
 
+
+
+
+
 .reviewsslider{
   background: #f0f0f0;
   padding: 100px 0 45px;
@@ -324,6 +428,10 @@
   &__wrap{
     position: relative;
     margin-top: 50px;
+
+    @include media(l){
+      margin-top: 30px;
+    }
   }
 
   &__cont{
@@ -393,6 +501,10 @@
 .psy6{
   margin-bottom: 130px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   .title{
     text-align: left;
   }
@@ -402,6 +514,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+
+    @include media(l){
+      margin-top: 30px;
+    }
   }
 
   &__item{
@@ -409,6 +525,10 @@
     font-size: 18px;
     color:#6c6c6c;
     line-height: 1.55;
+
+    @include media(l){
+      font-size: 16px;
+    }
   }
   &__icon, &__complex{
     width: 144px;
@@ -417,6 +537,12 @@
     flex-shrink: 0;
     margin-bottom: 30px;
     object-fit: contain;
+
+    @include media(l){
+      width: var(--iconsize);
+      height: var(--iconsize);
+      margin-bottom: 15px;
+    }
   }
   &__complex{
     display: flex;
@@ -430,11 +556,20 @@
     font-weight: 600;
     color:#000;
 
+    @include media(l){
+      font-size: 20px;
+    }
+
     img{
       display: block;
       width: 30px;
       flex-shrink: 0;
       margin-left: 10px;
+
+      @include media(l){
+        width: 20px;
+        margin-left: 5px;
+      }
     }
   }
 
@@ -455,6 +590,11 @@
   padding: 115px 0 140px;
   margin-bottom: 140px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+    padding: var(--blockspace) 0;
+  }
+
   .title{
     text-align: left;
   }
@@ -464,6 +604,11 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px 60px;
     margin-top: 70px;
+
+    @include media(l){
+      grid-gap: 40px 50px;
+      margin-top: 30px;
+    }
   }
 
   &__item{
@@ -471,8 +616,8 @@
   }
 
   &__icon{
-    width: 144px;
-    height: 144px;
+    width: var(--iconsize);
+    height: var(--iconsize);
     margin-bottom: 20px;
     object-fit: contain;
   }
@@ -482,11 +627,19 @@
     line-height: 31px;
     margin-bottom: 10px;
     min-height: 62px;
+
+    @include media(l){
+      font-size: 20px;
+    }
   }
   &__text{
     font-size: 20px;
     line-height: 25px;
     opacity: 0.6;
+
+    @include media(l){
+      font-size: 16px;
+    }
   }
 }
 
@@ -496,6 +649,10 @@
 
 .psy8{
   margin-bottom: 130px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
 
   .title{
     position: relative;
@@ -508,6 +665,11 @@
     margin-right: -50px;
     width: calc(100% + 100px);
     margin-top: 10px;
+
+    @include media(l){
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__post{
@@ -523,6 +685,11 @@
   padding-top: 140px;
   padding-bottom: 170px;
   color:#fff;
+
+  @include media(l){
+    padding-top: var(--blockspace);
+    padding-bottom: var(--blockspace);
+  }
 
   .title{
     color:#fff;
@@ -541,14 +708,24 @@
   grid-gap: 40px;
   margin-bottom: 112px;
 
+  @include media(l){
+    margin-top: 40px;
+    grid-gap: 30px;
+    margin-bottom: var(--blockspace);
+  }
+
   &__item{
     min-width: 0;
     font-size: 20px;
+
+    @include media(l){
+      font-size: 15px;
+    }
   }
 
   &__icon{
-    width: 144px;
-    height: 144px;
+    width: var(--iconsize);
+    height: var(--iconsize);
     display: block;
     margin-bottom: 25px;
   }
@@ -556,6 +733,11 @@
     font-size: 26px;
     line-height: 31px;
     margin-bottom: 13px;
+
+    @include media(l){
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
   &__text{
     opacity: 0.65;
@@ -589,6 +771,13 @@
     margin-bottom: 23px;
     display: block;
 
+    @include media(xl){
+      font-size: 48px;
+    }
+    @include media(l){
+      font-size: 36px;
+    }
+
     &:last-child{
       margin-bottom: 0;
     }
@@ -605,6 +794,12 @@
   margin: 0 auto;
   transform: translateX(-15px);
 
+  @include media(l){
+    width: 300px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
   &__photo{
     width: 100%;
     height: auto;
@@ -612,11 +807,19 @@
     margin-bottom: 15px;
     height: 360px;
     object-fit: cover;
+
+    @include media(l){
+      height: 280px;
+    }
   }
 
   &__name{
     font-weight: 600;
     margin-bottom: 13px;
+
+    @include media(l){
+      margin-bottom: 5px;
+    }
   }
 
   &__content{
@@ -651,6 +854,12 @@
   padding-bottom: 145px;
   margin-bottom: 145px;
   background-color: #f0f0f0;
+
+  @include media(l){
+    padding: var(--blockspace) 0;
+    margin-bottom: var(--blockspace);
+  }
+
   .title{
     text-align: left;
   }
@@ -660,6 +869,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
+
+    @include media(l){
+      grid-gap: 30px;
+    }
   }
 
   &__item{
@@ -667,16 +880,25 @@
 
     img{
       display: block;
-      width: 144px;
-      height: 144px;
+      width: var(--iconsize);
+      height: var(--iconsize);
       margin-bottom: 24px;
       object-fit: contain;
+
+      @include media(l){
+        margin-bottom: 15px;
+      }
     }
   }
 
   &__title{
     font-size: 26px;
     line-height: 31px;
+
+    @include media(l){
+      font-size: 18px;
+      line-height: 1.3;
+    }
   }
 }
 
@@ -685,6 +907,10 @@
 
 .stepform{
   margin-bottom: 290px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
   .title{
     text-align: left;
   }
@@ -697,6 +923,10 @@
     justify-content: space-between;
     font-size: 26px;
     opacity: 0.65;
+
+    @include media(l){
+      font-size: 18px;
+    }
   }
 
   &__arrow{
@@ -714,6 +944,10 @@
 
 .psy11{
   margin-bottom: 240px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
 }
 
 
@@ -724,6 +958,10 @@
 
 .progrmsummary{
   margin-bottom: 145px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
   &__wrap{
     margin-top: 56px;
   }
@@ -744,6 +982,14 @@
     border-radius: 100px;
     cursor: pointer;
     appearance: none;
+
+    @include media(l){
+      width: 30px;
+      height: 30px;
+      right: 15px;
+      top: calc(50% - 15px);
+      background-size: 18px;
+    }
   }
 
   &__head{
@@ -754,6 +1000,12 @@
     position: relative;
     cursor: pointer;
     color:#000;
+
+    @include media(l){
+      padding: 16px 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
 
     &:hover .progrmsummary__plus{
       background-color: #27b783;
@@ -771,16 +1023,26 @@
 
     p:not(:last-child){
       margin-bottom: 20px;
+      @include media(l){
+        margin-bottom: 10px;
+      }
     }
 
     h3{
       font-weight: 800;
       font-size: 22px;
+
+      @include media(l){
+        font-size: 1.3em;
+      }
     }
 
     h4{
       font-weight: 800;
       font-size: 18px;
+      @include media(l){
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -794,6 +1056,11 @@
     padding: 0 30px 40px;
     line-height: 1.4;
     --vertical: 10px;
+
+    @include media(l){
+      padding: 10px 15px 30px;
+      font-size: 14px;
+    }
   }
 
   .is-opened &__contentwrap{
@@ -819,6 +1086,12 @@
   padding-bottom: 145px;
   margin-bottom: 150px;
 
+  @include media(l){
+    padding-top: var(--blockspace);
+    padding-bottom: var(--blockspace);
+    margin-bottom: var(--blockspace);
+  }
+
   .title{
     text-align: left;
   }
@@ -834,6 +1107,10 @@
     span:nth-child(2){
       margin-left: 120px;
       display: block;
+
+      @include media(l){
+        margin-left: 0;
+      }
     }
 
     img{
@@ -842,6 +1119,11 @@
       top: -160px;
       transform: rotate(4deg);
       width: 350px;
+
+      @include media(l){
+        width: 220px;
+        top: -40px;
+      }
     }
   }
 
@@ -860,8 +1142,16 @@
 
 .psy15{
   margin-bottom: 220px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
   .features__wrap{
     padding-top: 70px;
+
+    @include media(l){
+      padding-top: 0px;
+    }
   }
 }
 
@@ -874,6 +1164,12 @@
   margin-bottom: 145px;
   color:#fff;
   min-height: 1150px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+    padding: var(--blockspace) 0;
+    min-height: auto;
+  }
 
   .title{
     color:#fff;
@@ -891,6 +1187,10 @@
   }
   .features__grid{
     padding-top: 170px;
+
+    @include media(l){
+      padding-top: 30px;
+    }
   }
   .features__subtitle{
     opacity: 1;
@@ -908,6 +1208,10 @@
 .diplomblock{
   margin-bottom: 130px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   &__sub{
     text-align: center;
     font-size: 20px;
@@ -918,6 +1222,7 @@
   &__pic{
     display: block;
     width: 818px;
+    max-width: 100%;
     margin: 55px auto 0;
   }
   &__footer{
@@ -931,9 +1236,26 @@
     justify-content: space-between;
     align-items: center;
 
+    @include media(l){
+      margin-top: 20px;
+      font-size: 18px;
+
+      p{
+        margin-right: 70px;
+      }
+
+      br{
+        display: none;
+      }
+    }
+
     b{
       color:#000;
       font-weight: 400;
+    }
+
+    .circlebutton{
+      flex-shrink: 0;
     }
   }
 }
@@ -946,6 +1268,10 @@
   background-color: #f0f0f0;
   padding: 100px 0 120px;
   margin-bottom: 0;
+
+  @include media(l){
+    padding: var(--blockspace) 0;
+  }
 
   .programfromlead__formwrap{
     --bg:#fff;
@@ -963,6 +1289,11 @@
   margin-bottom: 145px;
   color:#fff;
   overflow: hidden;
+
+  @include media(l){
+    padding: var(--blockspace) 0;
+    margin-bottom: var(--blockspace);
+  }
 
   .title{
     color:#fff;
@@ -985,6 +1316,10 @@
       position: absolute;
       left: 0;
       bottom: 26px;
+
+      @include media(l){
+        bottom: 22px;
+      }
     }
   }
 
@@ -1009,21 +1344,31 @@
     font-size: 26px;
     line-height: 31px;
 
+    @include media(l){
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
     small{
       display: block;
       color:#fff;
       font-size: 20px;
       line-height: 25px;
       margin-top: 40px;
+
+      @include media(l){
+        font-size: 16px;
+        margin-top: 20px;
+      }
     }
   }
 
   &__avawrap{
-    width: 144px;
-    height: 144px;
+    width: var(--iconsize);
+    height: var(--iconsize);
     position: absolute;
     top: 20px;
-    left: calc(50% - 72px);
+    left: calc(50% - var(--iconsize) / 2);
 
     img{
       display: block;
@@ -1038,6 +1383,11 @@
     display: block;
     margin-right: 67px;
     margin-top: 7px;
+
+    @include media(l){
+      margin-right: 50px;
+      width: 180px;
+    }
   }
 
   &__bot{
@@ -1059,11 +1409,21 @@
 
 .statistic{
   margin-bottom: 145px;
+
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   &__grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     margin-top: 60px;
+
+    @include media(l){
+      grid-gap: 20px;
+      margin-top: 40px;
+    }
   }
   &__item{
     min-width: 0;
@@ -1078,6 +1438,12 @@
     padding: 35px;
     min-height: 260px;
 
+    @include media(l){
+      font-size: 18px;
+      padding: 25px;
+      min-height: 200px;
+    }
+
     dt{
       margin-bottom: auto;
       font-size: 66px;
@@ -1085,6 +1451,10 @@
       font-family: 'JetBrains Mono', monospace;
       font-weight: 600;
       color:var(--psy-accent);
+
+      @include media(l){
+        font-size: 50px;
+      }
     }
     dd{
       margin-top: 45px;
@@ -1134,6 +1504,13 @@
   padding-top: 140px;
   padding-bottom: 160px;
   margin-bottom: 145px;
+
+  @include media(l){
+    padding-top: var(--blockspace);
+    padding-bottom: var(--blockspace);
+    margin-bottom: var(--blockspace);
+  }
+
   .title{
     text-align: center;
   }
@@ -1153,6 +1530,10 @@
 .quizlink{
   margin-bottom: 290px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   &__box{
     margin-top: 60px;
     border-radius: 20px;
@@ -1160,6 +1541,11 @@
     padding: 30px 40px;
     align-items: center;
     min-height: 280px;
+
+    @include media(l){
+      padding: 30px 40px;
+      min-height: auto;
+    }
   }
 
   dl{
@@ -1168,6 +1554,11 @@
     padding-right: 52px;
     margin-right: 40px;
     position: relative;
+
+    @include media(l){
+      font-size: 16px;
+      line-height: 1.3;
+    }
 
     &:not(:nth-child(2))::after{
       content:"";
@@ -1210,6 +1601,13 @@
       height: 199px;
       padding-bottom: 40px;
       padding-left: 50px;
+
+      @include media(l){
+        padding: 0;
+        padding-bottom: 50px;
+        width: 180px;
+        height: 180px;
+      }
     }
   }
 }
@@ -1220,6 +1618,10 @@
 .priceblock{
   margin-bottom: 175px;
 
+  @include media(l){
+    margin-bottom: var(--blockspace);
+  }
+
   .title{
     text-align: left;
   }
@@ -1227,6 +1629,11 @@
   &__row{
     align-items: center;
     margin-top: 40px;
+
+    @include media(l){
+      flex-flow: column nowrap;
+      align-items: flex-start;
+    }
   }
 
   &__price{
@@ -1237,6 +1644,10 @@
     font-weight: 600;
     white-space: nowrap;
     margin-left: -10px;
+
+    @include media(l){
+      font-size: 90px;
+    }
 
     span:first-child{
       display: inline-block;
@@ -1250,6 +1661,11 @@
     font-size: 20px;
     line-height: 1.7;
     white-space: nowrap;
+
+    @include media(l){
+      margin-left: 0;
+      font-size: 16px;
+    }
   }
 
   &__greenprice{
@@ -1257,6 +1673,11 @@
     font-size: 66px;
     font-weight: 600;
     margin-top: 35px;
+
+    @include media(l){
+      margin-top: 20px;
+      font-size: 48px;
+    }
 
     small{
       margin-top: 5px;
@@ -1276,6 +1697,12 @@
     justify-content: space-between;
     max-width: 700px;
     margin-bottom: 20px;
+
+    @include media(l){
+      font-size: 20px;
+      line-height: 1.4;
+      max-width: 70%;
+    }
 
     b{
       opacity: 0.65;
@@ -1307,8 +1734,16 @@
   padding-top: 145px;
   padding-bottom: 95px;
 
+  @include media(l){
+    padding-top: var(--blockspace);
+  }
+
   &__wrap{
     margin-top: 60px;
+
+    @include media(l){
+      margin-top: 40px;
+    }
   }
 
   .progrmsummary__item{
@@ -1333,10 +1768,18 @@
   padding-top: 145px;
   padding-bottom: 50px;
 
+  @include media(l){
+    padding-top: var(--blockspace);
+  }
+
   &__logo{
     display: block;
     width: 228px;
     margin-bottom: 50px;
+
+    @include media(l){
+      width: 200px;
+    }
   }
 
   &__line1{
@@ -1344,11 +1787,21 @@
     line-height: 25px;
     margin-bottom: 50px;
 
+    @include media(l){
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
     dt{
       font-size: 26px;
       line-height: 29px;
       flex-shrink: 0;
       margin-right: 175px;
+
+      @include media(l){
+        margin-right: 100px;
+        font-size: 23px;
+      }
     }
     dt{
       flex-grow: 1;
@@ -1360,6 +1813,11 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 35px;
     margin-bottom: 225px;
+
+    @include media(l){
+      grid-gap: 15px;
+      margin-bottom: var(--blockspace);
+    }
   }
 
   &__prop{
@@ -1375,6 +1833,12 @@
     font-size: 20px;
     line-height: 25px;
 
+    @include media(l){
+      padding: 30px 20px;
+      min-height: 220px;
+      font-size: 17px;
+    }
+
     dt{
       font-family: 'JetBrains Mono', monospace;
       font-weight: 600;
@@ -1382,6 +1846,10 @@
       line-height: 1;
       margin-bottom: auto;
       white-space: nowrap;
+
+      @include media(l){
+        font-size: 50px;
+      }
     }
 
     &--yellow{
@@ -1395,6 +1863,10 @@
     display: inline-block;
     height: auto;
     margin-left: 10px;
+
+    @include media(l){
+      width: 30px;
+    }
   }
 
   &__tags{
@@ -1434,6 +1906,15 @@
     font-size: 16px;
     line-height: 21px;
 
+    @include media(l){
+      font-size: 13px;
+      border-radius: 10px;
+      line-height: 1.3;
+      padding: 10px 15px;
+      min-height: 70px;
+      flex-grow: 1;
+    }
+
     &::after{
       width: 40px;
       height: 40px;
@@ -1445,6 +1926,11 @@
       margin-left: 8px;
       background: url(/img/psychology/b25-arrow.svg) no-repeat;
       background-size: contain;
+
+      @include media(l){
+        width: 30px;
+        height: 30px;
+      }
     }
 
     &:hover{
@@ -1456,6 +1942,10 @@
   &__action{
     margin-top: 35px;
     text-align: center;
+
+    @include media(l){
+      margin-top: 20px;
+    }
 
     button{
       appearance: none;

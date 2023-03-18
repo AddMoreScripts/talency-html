@@ -3,6 +3,10 @@
 .features{
   --gap: -80px;
 
+  @media(max-width: 1400px){
+    --gap:0;
+  }
+
   &__wrap{
     margin-left: var(--gap);
     margin-right: var(--gap);
@@ -10,6 +14,17 @@
     display: grid;
     grid-template-columns: 48.5% 1fr;
     grid-gap: 38px;
+
+    @include media(xl){
+      grid-template-columns: 40% 1fr;
+    }
+
+    @include media(l){
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+      max-width: 600px;
+      margin: 40px auto 0;
+    }
   }
 
   &__left{
@@ -30,6 +45,14 @@
     opacity: 0.65;
     font-size: 26px;
     line-height: 31px;
+
+    @include media(l){
+      font-size: 22px;
+      font-weight: 500;
+      br{
+        display: none;
+      }
+    }
   }
 
   &__grid{
@@ -37,6 +60,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px 38px;
     padding-top: 90px;
+
+    @include media(xl){
+      padding-top: 40px;
+    }
   }
 
   &__item{
@@ -45,6 +72,10 @@
     line-height: 25px;
     color:#858585;
 
+    @include media(l){
+      font-size: 16px;
+    }
+
     b{
       color:#000;
       font-weight: 400;
@@ -52,7 +83,7 @@
 
     img{
       display: block;
-      height: 144px;
+      height: var(--iconsize);
       width: auto;
       border-radius: 72px;
       margin-bottom: 20px;
