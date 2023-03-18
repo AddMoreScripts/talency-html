@@ -6,6 +6,15 @@
   --button: #0153ee;
   --button-h: hsl(219, 99%, 54%);
 }
+
+// @font-face {
+//   font-family: "Talentsy-web";
+//   src: url("/fonts/DrukWideCyr-Medium.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 body {
   background: #fff;
   font-family: 'Manrope', sans-serif;
@@ -26,6 +35,9 @@ body {
 .jbm{
   font-family: 'JetBrains Mono', monospace;
 }
+// .druk{
+//   font-family: "Talentsy-web", 'Arial', sans-serif;
+// }
 
 .pagewrap,
 .pagemain {
@@ -352,4 +364,9 @@ body {
     color:var(--psy-accent);
     font-weight: 600;
   }
+}
+
+
+.fancybox__html5video{
+  outline: none !important;
 }

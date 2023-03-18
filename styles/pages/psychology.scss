@@ -316,8 +316,6 @@
 }
 
 
-
-
 .reviewsslider{
   background: #f0f0f0;
   padding: 100px 0 45px;
@@ -325,23 +323,31 @@
 
   &__wrap{
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   &__cont{
     margin: 0 auto;
     position: relative;
     max-width: 1530px;
+    width: calc(100% - 200px);
   }
 
   .ctrl{
     position: absolute;
     top: calc(50% - 28px);
     left: 30px;
+
+    @include media(xl){
+      left: 15px;
+    }
   }
   .ctrl--next{
     right: 30px;
     left: auto;
+    @include media(xl){
+      right: 15px;
+    }
   }
 
   &__videowrap{
@@ -1313,7 +1319,7 @@
   }
 
   .progrmsummary__head strong{
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 
