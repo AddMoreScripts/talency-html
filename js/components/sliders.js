@@ -14,7 +14,7 @@ export const initSliders = () => {
     pagination: false,
     breakpoints: {
       767 : {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1199: {
         spaceBetween: 30,
@@ -29,15 +29,22 @@ export const initSliders = () => {
 
   const teamslider = new Swiper('.js-team-slider', {
     loop: false,
-    effect: 'fade',
+    effect: window.innerWidth > 992 ? 'fade' : 'slide',
     fadeEffect: {
       crossFade: true
     },
-    spaceBetween: 0,
-    slidesPerView: 1,
+    spaceBetween: 15,
+    slidesPerView: 'auto',
     navigation: false,
     pagination: false,
     autoHeight: true,
+    breakpoints: {
+      992: {
+        slidesPerView: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+      },
+    }
   });
 
   const teamblock = document.querySelector('.teamblock');

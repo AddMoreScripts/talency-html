@@ -20,6 +20,9 @@
     background: none;
     font-size: 15px;
   }
+  @include media(l){
+    min-height: auto;
+  }
 
   &__wrap{
     --logo-height: 62px;
@@ -32,8 +35,12 @@
       padding: 0 20px;
     }
     @include media(l){
-      height: 55px;
       --logo-height: 55px;
+      height: var(--logo-height);
+    }
+    @include media(m){
+      --logo-height: 45px;
+      justify-content: space-between;
     }
   }
 
@@ -120,6 +127,9 @@
     @include media(l){
       margin-left: 20px;
     }
+    @include media(m){
+      display: none;
+    }
 
     ul{
       display: flex;
@@ -167,12 +177,18 @@
       &:hover{
         color:#888;
       }
+      @include media(m){
+        display: none;
+      }
     }
   }
 
   &__phone{
     font-size: 17px;
     font-weight: 700;
+    @include media(m){
+      display: none;
+    }
   }
 
   &__login{
@@ -191,6 +207,13 @@
     @include media(l){
       width: var(--logo-height);
       height: var(--logo-height);
+    }
+    @include media(m){
+      display: flex !important;
+      margin-left: 0 !important;
+      color:#000 !important;
+      font-weight: 500;
+      background: none;
     }
 
     &:hover{
