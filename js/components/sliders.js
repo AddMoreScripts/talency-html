@@ -53,10 +53,6 @@ export const initSliders = () => {
       const nameLink = e.target.closest('.teamblock__navlink[data-slide]');
       if(!nameLink) return;
       e.preventDefault();
-      // document.querySelectorAll('.teamblock__navlink.is-active').forEach(el => {
-      //   el.classList.remove('is-active');
-      // });
-      // nameLink.classList.add('is-active');
       teamslider.slideTo(parseInt(nameLink.dataset.slide));
     });
     teamblock.addEventListener('click', (e) => {

@@ -11,6 +11,7 @@ import { startAccordeons } from './components/accordeons';
 import initVideoReviews from './components/videoreview';
 import '../styles/app.scss';
 import initScrollAnimation from './components/scrollAnimation';
+import { startInputMask } from './components/phonemasks';
 
 initSliders();
 startAccordeons();
@@ -18,6 +19,7 @@ initVideoReviews();
 initScrollTo();
 initScrollTop();
 initScrollAnimation();
+startInputMask();
 
 
 /**
