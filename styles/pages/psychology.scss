@@ -100,6 +100,7 @@
     }
     @include media(m){
       font-size: 30px;
+      line-height: 1;
     }
     @include media(s){
       font-size: 28px;
@@ -161,11 +162,23 @@
     position: absolute;
     right: 0;
     top: 0;
+    text-align: left;
 
     @include media(s){
+      width: 196px;
+      height: 196px;
       position: relative;
       margin-left: auto;
-      margin-top: -40px;
+      margin-top: -20px;
+      font-size: 18px;
+      line-height: 21px;
+      padding-bottom: 55px;
+
+      &::after{
+        left: 49%;
+        width: 55px;
+        top: 54px;
+      }
     }
   }
 }
@@ -926,7 +939,7 @@
 .mentors{
   background-color: #001427;
   padding-top: 140px;
-  padding-bottom: 170px;
+  padding-bottom: 80px;
   color:#fff;
   overflow: hidden;
 

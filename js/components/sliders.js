@@ -37,11 +37,11 @@ export const initSliders = () => {
     slidesPerView: 'auto',
     navigation: false,
     pagination: false,
-    autoHeight: true,
+    autoHeight: false,
     breakpoints: {
       992: {
         slidesPerView: 1,
-        autoHeight: true,
+        autoHeight: false,
         spaceBetween: 0,
       },
     }

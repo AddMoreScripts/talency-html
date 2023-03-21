@@ -36,6 +36,7 @@ Fancybox.bind('[data-fancybox]', {
   compact: true,
   animated: false,
   preload: 0,
+  placeFocusBack: false,
   template: {
     buttons: '',
   },
