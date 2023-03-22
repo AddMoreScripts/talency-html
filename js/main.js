@@ -59,3 +59,15 @@ window.modalInstance = new HystModal({
  * см. https://github.com/verlok/vanilla-lazyload
  */
 new LazyLoad();
+
+
+
+const promocodeLink = () => {
+  document.addEventListener('click', (e) => {
+    const promolink = e.target.closest('.js-promolink');
+    if(!promolink) return;
+    e.preventDefault();
+    promolink.closest('.promobox')?.classList?.add('is-active');
+  });
+};
+promocodeLink();

@@ -147,7 +147,7 @@ body {
   pointer-events: none;
   width: 50px;
   height: 50px;
-  background: #0153ee;
+  background: #27b783;
   border-radius: 50%;
   position: fixed;
   opacity: 0;
@@ -251,6 +251,7 @@ body {
   border:none;
   appearance: none;
   transition:color 0.4s ease;
+  box-shadow: 4px 8px 20px 4px rgba(0,0,0,0.5);
 
   @include media(l){
     width: 170px;
@@ -318,7 +319,7 @@ body {
     text-align: center;
   }
   @include media(s){
-    br{
+    br:not(.mobbr){
       display: none;
     }
   }

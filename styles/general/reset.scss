@@ -64,8 +64,8 @@ a:hover{
 }
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -73,6 +73,8 @@ a:hover{
 @media (min-width:768px) {
   .container {
     max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 @media (min-width:992px) {

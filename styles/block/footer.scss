@@ -41,8 +41,12 @@
 
     @include media(m){
       font-size: 16px;
-      line-height: 1.4;
+      line-height: 21px;
       margin-bottom: 30px;
+
+      br{
+        display: none;
+      }
     }
   }
 
@@ -199,6 +203,15 @@
 }
 
 
+
+.footerdesk{
+  display: block;
+  @include media(s){
+    display: none;
+  }
+}
+
+
 .footerline{
   height: 85px;
   position: relative;
@@ -343,9 +356,10 @@
       margin-bottom: 25px;
     }
     @include media(s){
-      font-size: 19px;
+      font-size: 22px;
+      line-height: 29px;
       margin-bottom: 20px;
-      text-align: center;
+      text-align: left;
       margin:  0 auto 20px;
     }
   }
@@ -504,6 +518,12 @@
 
 
 .footerbot{
+
+  @include media(s){
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
   &__banksgrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -521,6 +541,12 @@
     @include media(m){
       grid-template-columns: 1fr 1fr;
       margin-bottom: 50px;
+    }
+
+    @include media(s){
+      max-width: 330px;
+      margin: 0 auto 50px;
+      grid-gap: 25px;
     }
 
     dt{
@@ -545,9 +571,10 @@
       grid-gap: 15px;
     }
     @include media(s){
-      font-size: 12px;
-      text-align: center;
-      grid-template-columns: 1fr;
+      max-width: 330px;
+      margin: 0 auto;
+      font-size: 13px;
+      line-height: 20px;
     }
 
     a{

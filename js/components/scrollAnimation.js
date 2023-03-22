@@ -3,11 +3,38 @@ import ScrollReveal from 'scrollreveal'
 function initScrollAnimation() {
   ScrollReveal().reveal(document.querySelectorAll(".js-slide-bot"), {
     delay: 0,
-    distance: "50px",
-    duration: 1000,
+    distance: "70px",
+    duration: 400,
     origin: "bottom",
     reset: false,
     mobile: false,
+    viewOffset: {
+      bottom: 100,
+      top: 100,
+    },
+  });
+
+  ScrollReveal().reveal(document.querySelectorAll(".title"), {
+    delay: 0,
+    distance: "60px",
+    duration: 700,
+    origin: "bottom",
+    reset: false,
+    mobile: false,
+    viewOffset: {
+      bottom: 100,
+      top: 100,
+    },
+  });
+
+  ScrollReveal().reveal(document.querySelectorAll(".js-slide-opac"), {
+    delay: 0,
+    duration: 600,
+    scale: 0.9,
+    interval: 200,
+    reset: false,
+    mobile: false,
+    opacity: 0,
     viewOffset: {
       bottom: 100,
       top: 100,
@@ -49,8 +76,8 @@ function initScrollAnimation() {
     reset: false,
     mobile: false,
     viewOffset: {
-      bottom: 0,
-      top: -500,
+      bottom: 100,
+      top: 100,
     },
   });
 }

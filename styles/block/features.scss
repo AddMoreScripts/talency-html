@@ -54,13 +54,15 @@
     @include media(l){
       font-size: 22px;
       font-weight: 500;
-      br{
+      br:not(.mobbr){
         display: none;
       }
     }
 
     @include media(m){
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 24px;
+      opacity: 1;
     }
   }
 
@@ -96,8 +98,8 @@
     @include media(m){
       border-radius: 14px;
       padding: 0;
-      line-height: 1.4;
-      font-size: 15px;
+      line-height: 22px;
+      font-size: 16px;
       display: flex;
       flex-flow: column nowrap;
       align-items: start;
