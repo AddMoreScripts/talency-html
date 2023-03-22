@@ -29,9 +29,9 @@ function initScrollAnimation() {
 
   ScrollReveal().reveal(document.querySelectorAll(".js-slide-opac"), {
     delay: 0,
-    duration: 600,
+    duration: 700,
     scale: 0.9,
-    interval: 200,
+    interval: 0,
     reset: false,
     mobile: false,
     opacity: 0,
