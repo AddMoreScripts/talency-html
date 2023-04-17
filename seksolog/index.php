@@ -249,7 +249,7 @@
         <div class="sex6__x"></div>
         <dl class="sex6dl sex6dl--white">
           <dt class="jbm">
-          <img src="/img/sexolog/b6-woman.png" class="sex6dl__dlimg" alt="">  
+          <img src="/img/sexolog/b6-woman.png" class="sex6dl__dlimg" alt="">
           <span>2500p.</span></dt>
           <dd>
             Средняя стоимость <br>консультации по данным <br>Profi.ru

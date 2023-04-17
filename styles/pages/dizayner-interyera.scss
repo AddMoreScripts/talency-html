@@ -1,1 +1,173 @@
 @use '../general/mixins' as *;
+
+.page-disint{
+  --psy-accent: #537aff;
+  --white-accent:#fe846b;
+
+
+  .hero{
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hero__small{
+    margin-bottom: 40px;
+  }
+  .hero__h1{
+    margin-bottom: -40px;
+    font-size: 66px;
+  }
+  .hero__videowrap{
+    height: auto;
+  }
+  .hero__videobox{
+    padding-bottom: 44%;
+
+    &::after{
+      display: block;
+      top: 0;
+      right: 0;
+      content:"";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      background: url(/img/dizayner-interyera/b1-golden.svg) right top no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+
+
+
+
+
+
+.disint2{
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+  .title{
+    text-align: left;
+  }
+  &__grid{
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 100px;
+    &::after{
+      content:"";
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 2000px;
+      height: 1px;
+      background: #000;
+    }
+    &::before{
+      content:"";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border:1px solid #000;
+      z-index: 4;
+    }
+  }
+  &__picwrap{
+    height: var(--iconsize);
+    margin-bottom: 23px;
+
+    img{
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__title{
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  &__sub{
+    font-size: 20px;
+    line-height: 1.25;
+    opacity: 0.65;
+  }
+}
+
+
+
+
+
+
+.disint-iphone{
+  background-color: #ffda6b;
+  margin-top: 5px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  margin-bottom: 0;
+
+  .iphone__counter{
+    width: var(--iconsize);
+    height: var(--iconsize);
+    border-radius: 100px;
+    border:1px solid #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    @include media(l) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .iphone__grid{
+    grid-gap: 55px 30px;
+  }
+
+  .iphone__right{
+    flex-shrink: 0;
+  }
+
+  .iphone__overmock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    width: 82%;
+    z-index: 2;
+    display: block;
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+.disint4{
+  margin-bottom: 0;
+}
+
+
+
+
+
+.disint5{
+  padding-top: 140px;
+  background-color: #01321f;
+
+  .title{
+    text-align: center;
+    color:#ffda6b;
+
+    b{
+      color:#fff;
+    }
+  }
+}
