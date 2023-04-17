@@ -338,3 +338,23 @@ body {
 .fancybox__html5video{
   outline: none !important;
 }
+
+
+.grid3, .grid2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: auto;
+
+  @include media(l){
+    grid-gap: 15px;
+  }
+  @include media(m){
+  }
+}
+.grid2{
+  grid-template-columns: 1fr 1fr;
+}
+.grid-item{
+  min-width: 0;
+}

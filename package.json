@@ -1,24 +1,22 @@
 {
-  "name": "psy",
-  "private": true,
+  "name": "addmore_wp_theme",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.58.3",
-    "vite": "^4.1.0"
+    "dev": "vite --mode development",
+    "build": "vite build"
   },
   "dependencies": {
-    "swiper": "^9.1.0",
     "@fancyapps/ui": "^4",
     "hystmodal": "1.0.0-beta.2",
     "imask": "^6",
     "scrollreveal": "^4.0.9",
     "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8",
     "vanilla-lazyload": "^17.8.3"
+  },
+  "devDependencies": {
+    "sass": "^1",
+    "vite": "^4",
+    "vite-plugin-live-reload": "^3"
   }
 }

@@ -47,6 +47,18 @@ export const initSliders = () => {
     }
   });
 
+
+  const diplom = new Swiper('.js-diplomblock-slider', {
+    loop: false,
+    spaceBetween: 15,
+    slidesPerView: 1,
+    navigation: {
+      prevEl: ".js-diplomblock-slider .ctrl--prev",
+      nextEl: ".js-diplomblock-slider .ctrl--next",
+    },
+  });
+
+
   const teamblock = document.querySelector('.teamblock');
   if (teamblock) {
     teamblock.addEventListener('mouseover', (e) => {

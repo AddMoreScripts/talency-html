@@ -433,6 +433,11 @@
       color: #000;
       width: 100%;
 
+      &::placeholder{
+        color:#000;
+        opacity: 0.5;
+      }
+
       @include media(l) {
         font-size: 16px;
         height: 48px;
@@ -919,6 +924,7 @@
 
 .psy8 {
   margin-bottom: 130px;
+  overflow: hidden;
 
   @include media(l) {
     margin-bottom: var(--blockspace);
@@ -931,8 +937,9 @@
 
   &__bg {
     display: block;
-    margin-left: -50px;
-    margin-right: -50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: calc(100% + 100px);
     margin-top: 10px;
 
@@ -1976,11 +1983,18 @@
       @include media(l) {
         font-size: 50px;
       }
+      @include media(s) {
+        font-size: 42px;
+      }
     }
     dd {
       margin-top: 45px;
       @include media(m) {
         margin-top: 25px;
+
+        br{
+          display: none;
+        }
       }
     }
 
@@ -2000,6 +2014,15 @@
 
     &--veryellow {
       background-color: #ffc800;
+      color: #000;
+
+      dt {
+        color: #000;
+      }
+    }
+
+    &--verred {
+      background-color: #fe846b;
       color: #000;
 
       dt {
@@ -2219,11 +2242,15 @@
   @include media(m) {
     padding-top: 105px;
   }
+  @include media(s) {
+    padding-top: var(--blockspace);
+  }
 
   .title {
     text-align: left;
     @include media(m) {
       text-align: center;
+      white-space: nowrap;
     }
   }
 
@@ -2685,6 +2712,7 @@
     }
     @include media(m) {
       flex-grow: 0;
+      margin-right: 0;
       min-height: 50px;
       padding: 5px 15px;
       justify-content: space-between;

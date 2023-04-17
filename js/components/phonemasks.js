@@ -5,14 +5,14 @@ import IMask from 'imask';
  * см. https://imask.js.org/
  */
 
-const SELECTOR = 'input[data-mask="tel"]';
+const SELECTOR = 'input[type="tel"]';
 
-export function startInputMask () {
+export default () => {
   function applyInputMasks(elem) {
     const input = elem;
     if (input.mask) return false;
     input.mask = IMask(input, {
-      mask: '(000) 000-00-00',
+      mask: '+{7} 000 000-00-00',
       lazy: true,
       autofix: true,
     });
@@ -27,7 +27,7 @@ export function startInputMask () {
 
   document.addEventListener('focusin', (e) => {
     const phoneInput = e.target.closest(SELECTOR);
-    if (!phoneInput || !phoneInput.mask) return;
+    if (!phoneInput) return;
     applyInputMasks(phoneInput);
     phoneInput.mask.updateOptions({
       lazy: false,
