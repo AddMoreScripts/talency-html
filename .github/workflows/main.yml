@@ -26,6 +26,6 @@ jobs:
         server: 89.47.160.33
         username: ${{ secrets.ftp_login }}
         password: ${{ secrets.ftp_password }}
-        local-dir: ./dist/
+        local-dir: ./
         server-dir: /www/anton.uzhi.ru/
         dangerous-clean-slate: false
