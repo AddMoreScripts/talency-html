@@ -235,7 +235,9 @@ function getVKUserFormInfo(token, uuid, OTP) {
       if (answer.success) {
         // для форм тильды
         $('input[name="Name"]').val(answer.name);
-        $('input[name="Phone"]').val(answer.phone.slice(1)); // для тильдовской маски
+        document.querySelectorAll('input[name="Phone"]').forEach((inp) => {
+          inp.mask.value = answer.phone;
+        });
         $('input[name="Email"]').val(answer.email);
 
         // для форм геткурса проставляем в параметры айдишник

@@ -56,19 +56,19 @@
 
   <section class="hero hero--disint">
     <h2 class="hero__small">Курс дизайнера интерьера</h2>
-    <div class="hero__h1 jbm">
+    <div class="hero__h1 jbm js-slide-bot">
       За 1 год <img src="/img/dizayner-interyera/b1-sm.webp" alt=""> сделаем из тебя <br>
       <b>успешного дизайнера интерьера</b> <br>
       и изменим твою жизнь <br>
       до неузнаваемости
     </div>
-    <div class="hero__videowrap ">
+    <div class="hero__videowrap js-slide-bot">
       <div class="hero__videobox square">
         <video class="hero__video square__img" preload="auto" playsinline="" autoplay="" loop="" muted="">
           <source src="/img/dizayner-interyera/b1-video.mp4">
         </video>
       </div>
-      <a href="#" class="hero__overbutton circlebutton">
+      <a href="#offer" class="hero__overbutton circlebutton" data-scrollto="">
         Стать дизайнером<br>
         интерьера
       </a>
@@ -81,7 +81,7 @@
       <div class="disint2__grid grid3">
         <div class="grid-item disint2__item">
           <div class="disint2__picwrap">
-            <img src="/img/dizayner-interyera/b2-1.webp" alt="">
+            <img src="/img/dizayner-interyera/b2-1.webp" alt="" class="js-slide-opac">
           </div>
           <div class="disint2__title">
             Какой у тебя опыт <br>
@@ -94,7 +94,7 @@
         </div><!-- //disint1__item -->
         <div class="grid-item disint2__item">
           <div class="disint2__picwrap">
-            <img src="/img/dizayner-interyera/b2-2.webp" alt="">
+            <img src="/img/dizayner-interyera/b2-2.webp" alt="" class="js-slide-opac">
           </div>
           <div class="disint2__title">
             Eсть ли у тебя талант<br>
@@ -106,7 +106,7 @@
         </div><!-- //disint1__item -->
         <div class="grid-item disint2__item">
           <div class="disint2__picwrap">
-            <img src="/img/dizayner-interyera/b2-3.webp" alt="">
+            <img src="/img/dizayner-interyera/b2-3.webp" alt="" class="js-slide-opac">
           </div>
           <div class="disint2__title">
             Кем ты работаешь<br>
@@ -174,7 +174,11 @@
       <h2 class="title">
         Получить полную<br> <b>программу курса</b>
       </h2>
-      <?php include('./../templates/leadform.php'); ?>
+      <?php
+        $buttonTxt = 'Получить программу';
+        include('./../templates/leadform.php');
+        $buttonTxt = null;
+      ?>
     </div>
   </section><!-- //programfromlead -->
 
@@ -187,6 +191,8 @@
       <div class="grid-mob-scroll">
         <div class="dreams__grid">
           <div class="dreams__item dreams__item--complex">
+            <i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i>
             <div class="dreams__iconwrap">
               <img data-src="/img/dizayner-interyera/b5-1.webp" alt="" class="lazy js-slide-opac">
             </div>
@@ -245,12 +251,6 @@
 
 
 
-
-  </body></html>
-<?php die(); ?>
-
-
-
   <section class="reviewsslider js-review-slider disint6">
     <h2 class="title">Посмотрите <b>отзывы</b> наших <br><b>студентов</b></h2>
     <div class="reviewsslider__wrap">
@@ -273,11 +273,10 @@
         </div>
       </div>
     </div>
-    <div class="disint__bot container">
-      А еще вы можете посмотреть работы наших студентов <a href="https://pin.it/64rsuUj" target="_blank">перейдя по ссылке</a>
+    <div class="disint6__bot container">
+      А еще вы можете посмотреть работы наших<br> студентов <a href="https://pin.it/64rsuUj" target="_blank">перейдя по ссылке</a>
     </div>
   </section>
-
 
 
 
@@ -359,10 +358,7 @@
 
 
 
-
-
-
-  <section class="features psy11 disint8">
+  <section class="features disint8">
     <div class="container">
       <h2 class="title">Тебя ждет <b>фундаментальная, <br>глубокая</b> и <b>подробная</b> <br><span>программа <br class="mobbr">обучения</span></h2>
       <div class="features__wrap">
@@ -404,30 +400,31 @@
             <div class="grid-mob-scroll">
               <div class="psy11__grid">
                 <div class="psy11__item psy11__item--wide">
-                  <img data-src="/img/psychology/b12-1.png" alt="" class="lazy js-slide-opac">
-                  <p>Программа разработана на основе ФГОС ВО 370301 «Психология», и&nbsp;соответствует профессиональным
-                    стандартам</p>
+                  <img data-src="/img/dizayner-interyera/b8-1.jpg" alt="" class="lazy js-slide-opac">
+                  <p>Программа соответствует <br><b>профессиональным стандартам</b></p>
                 </div>
                 <div class="psy11__item">
-                  <img data-src="/img/psychology/b12-2.png" alt="" class="lazy js-slide-opac">
-                  <p>Практика <b>начнется с первых дней обучения</b></p>
+                  <img data-src="/img/dizayner-interyera/b8-2.jpg" alt="" class="lazy js-slide-opac">
+                  <p>Студенты обучаются <b>современному программному обеспечению</b></p>
                 </div>
                 <div class="psy11__item">
-                  <img data-src="/img/psychology/b12-3.png" alt="" class="lazy js-slide-opac">
-                  <p>Современные <b>методики обучения</b></p>
+                  <img data-src="/img/dizayner-interyera/b8-3.jpg" alt="" class="lazy js-slide-opac">
+                  <p><b>Практика</b> начнется <b>с первых дней</b> обучения</p>
                 </div>
                 <div class="psy11__item">
-                  <img data-src="/img/psychology/b12-4.png" alt="" class="lazy js-slide-opac">
-                  <p>Более 100 дополнительных материалов</p>
+                  <img data-src="/img/dizayner-interyera/b8-4.webp" alt="" class="lazy js-slide-opac">
+                  <p>В курс входит множество дополнительных материалов (примеры, шаблоны, схемы)</p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section><!-- //disint8 -->
+
+
+
 
 
   <section class="stepform disint-stepform">
@@ -452,8 +449,6 @@
 
 
 
-
-
   <section class="disint10">
     <div class="container">
       <h2 class="title">
@@ -465,27 +460,27 @@
       <div class="disint10__grid grid3">
         <div class="disint10__item">
           <div class="disint10__iconwrap">
-            <img src="/img/dizayner-interyera/b11-1.svg" alt="">
+            <img src="/img/dizayner-interyera/b11-1.svg" alt=""  class="js-slide-opac">
           </div>
           <div class="disint10__title">Студенты практикуются на реальных объектах</div>
         </div>
         <div class="disint10__item">
           <div class="disint10__iconwrap">
-            <img src="/img/dizayner-interyera/b11-2.svg" alt="">
+            <img src="/img/dizayner-interyera/b11-2.svg" alt=""  class="js-slide-opac">
           </div>
           <div class="disint10__title">По желанию можете взять собственный объект</div>
           <div class="disint10__sub">дом или квартиру <br>для практики</div>
         </div>
         <div class="disint10__item">
           <div class="disint10__iconwrap">
-            <img src="/img/dizayner-interyera/b11-3.svg" alt="">
+            <img src="/img/dizayner-interyera/b11-3.svg" alt=""  class="js-slide-opac">
           </div>
           <div class="disint10__title">Первые деньги студенты могут заработать уже в&nbsp;процессе обучения</div>
         </div>
       </div>
+      <div class="disint10__line"></div>
     </div>
   </section><!-- //disint10 -->
-
 
 
 
@@ -498,9 +493,11 @@
         <img src="/img/dizayner-interyera/b12-catalog.webp" alt="">
       </h3>
       <?php
+        $buttonTxt = 'Получить гайд';
         $formClassName = 'programfromlead__formwrap--yellow';
         include('./../templates/leadform.php');
         $formClassName = '';
+        $buttonTxt = null;
       ?>
     </div>
   </section><!-- //disint-guideform -->
@@ -508,10 +505,9 @@
 
 
 
-
   <section class="features disint13">
     <div class="container">
-      <h2 class="title">Вас ждут практические <br>занятия, в <b>мини-группах</b></h2>
+      <h2 class="title">Вас ждут практические занятия<br>в <b>мини-группах до 15 человек</b></h2>
       <div class="features__wrap">
         <div class="features__left js-slide-bot">
           <video preload="auto" playsinline autoplay loop muted class="lazy">
@@ -548,7 +544,6 @@
 
 
 
-
   <section class="disint-programs">
     <div class="container">
       <h2 class="title">
@@ -558,24 +553,28 @@
         дизайн-проектами
       </h2>
       <div class="disint-programs__sub">А также уроки <br>скетчинга <br>от руки</div>
+      <div class="disint10__line"></div>
       <div class="disint-programs__linegrid grid3">
         <div class="grid-item">
           <div class="disint-program">
-            <img src="/img/dizayner-interyera/b14-1.webp" alt="" class="disint-program__logo">
+            <img src="/img/dizayner-interyera/b14-1.webp" alt="" class="disint-program__logo js-slide-opac">
             <div class="disint-program__title">Рабочие чертежи</div>
           </div>
+        </div>
+        <div class="grid-item">
           <div class="disint-program">
-            <img src="/img/dizayner-interyera/b14-2.webp" alt="" class="disint-program__logo">
+            <img src="/img/dizayner-interyera/b14-2.webp" alt="" class="disint-program__logo js-slide-opac">
             <div class="disint-program__title">Коллаж</div>
           </div>
+        </div>
+        <div class="grid-item">
           <div class="disint-program">
-            <img src="/img/dizayner-interyera/b14-3.webp" alt="" class="disint-program__logo">
+            <img src="/img/dizayner-interyera/b14-3.webp" alt="" class="disint-program__logo js-slide-opac">
           </div>
         </div>
       </div>
     </div>
   </section><!-- //disint-programs -->
-
 
 
 
@@ -592,13 +591,14 @@
           <img src="/img/dizayner-interyera/b15-iphone.png" alt="" class="disintchat__ramka">
           <img src="/img/dizayner-interyera/b15-messages.svg" alt="" class="disintchat__interface">
         </div>
-        <div class="disintchat__context disintchat__context--1">Наши преподаватели и партнеры приглашают наиболее активных студентов на стажировки</div>
-        <div class="disintchat__context disintchat__context--2">
+        <div class="disintchat__context disintchat__context--1 js-slide-left">Наши преподаватели и партнеры приглашают наиболее активных студентов на стажировки</div>
+        <div class="disintchat__context disintchat__context--2 js-slide-right">
           Таким образом <br>вы сможете начать окупать свое обучение еще в&nbsp;процессе самого обучения
         </div>
       </div>
     </div>
   </section>
+
 
 
 
@@ -634,19 +634,18 @@
 
 
 
-  <section class="diplomblock">
+  <section class="diplomblock diplomblock--disint">
     <div class="container">
       <h2 class="title">
-        <b>Вы получаете диплом <br>установленного образца</b> <br>
+        <b>Вы получите диплом <br>установленного образца</b> <br>
         о профессиональной переподготовке
       </h2>
-      <div class="diplomblock__sub js-slide-opac">А так же два международных диплома</div>
       <img src="/img/dizayner-interyera/b17-diplom.webp" alt="" class="diplomblock__pic">
       <div class="diplomblock__footer flexi">
         <p>
-          Каждый выпускник курса может<br>
-          <b>подтвердить свою<br>
-          квалификацию</b> перед заказчиками<br>
+          Сможете <b>подтвердить <br>
+          свою квалификацию</b><br>
+          перед заказчиками<br>
           и / или работодателями
         </p>
         <a href="#offer" class="circlebutton" data-scrollto="#offer">Задать вопрос <br>специалисту</a>
@@ -657,8 +656,7 @@
 
 
 
-
-  <section class="features disint18" style="background-image: url(/img/dizayner-interyera/b18-golden.svg);">
+  <section class="features disint18">
     <div class="container">
       <h2 class="title">Мы организовали <b>яркую <br>студенческую жизнь</b></h2>
       <div class="features__wrap">
@@ -679,12 +677,12 @@
                 <img src="/img/dizayner-interyera/b18-2.webp" alt="">
               </picture>
               <div class="features__subtitle">Киноклуб</div>
-              <p>Обсуждаем фильмы в&nbsp;контексте дизайна интерьера</p>
+              <p>Обсуждаем фильмы в&nbsp;контексте дизайна <br>интерьера</p>
             </div>
             <div class="features__item">
               <img src="/img/dizayner-interyera/b18-3.webp" alt="" class="js-slide-opac">
               <div class="features__subtitle">Читальный зал</div>
-              <p>Обсуждаем интересные книги</p>
+              <p>Обсуждаем интересные <br>книги</p>
             </div>
           </div>
         </div>
@@ -700,35 +698,33 @@
     <div class="disint19__bgs">
       <img src="/img/dizayner-interyera/b19-left.jpg" alt="" class="disint19__leftbg">
       <img src="/img/dizayner-interyera/b19-right.jpg" alt="" class="disint19__rightbg">
-      <div class="containter">
-        <div class="disint19__lead jbm">
-          Что <br>выберешь <br>ты?
+    </div>
+    <div class="containter">
+      <div class="disint19__lead jbm">
+        Что <br>выберешь <br>ты?
+      </div>
+      <div class="disint19__chatwrap">
+        <div class="disint19__badwrap js-slide-left">
+          <p>Потерянное время, <br>деньги и нервы</p>
+          <p>Занудные лекции</p>
+          <p class="disint19__sp">Имитация поддержки <br>студентов</p>
+          <p>Преподаватели <br>без достижений</p>
+          <p class="disint19__sp">Отсутствие клиентов</p>
+          <p>Неопытные кураторы</p>
+          <p class="disint19__sp">Заурядная программа</p>
         </div>
-        <div class="disint19__chatwrap">
-          <div class="disint19__badwrap">
-            <p>Потерянное время, <br>деньги и нервы</p>
-            <p>Занудные лекции</p>
-            <p>Имитация поддержки <br>студентов</p>
-            <p>Преподаватели <br>без достижений</p>
-            <p>Отсутствие клиентов</p>
-            <p>Неопытные кураторы</p>
-            <p>Заурядная программа</p>
-          </div>
-          <div class="disint19__goodwrap">
-            <p>Фундаментальная <br>образовательная <br>программа</p>
-            <p>Звездные преподаватели</p>
-            <p>Обучение в мини-группах</p>
-            <p>Сотни часов практики</p>
-            <p>Стажировки у партнеров</p>
-            <p>Сопровождение <br>до первых клиентов</p>
-            <p>Яркая студенческая жизнь</p>
-          </div>
+        <div class="disint19__goodwrap js-slide-right">
+          <p>Фундаментальная <br>образовательная <br>программа</p>
+          <p class="disint19__sp">Звездные преподаватели</p>
+          <p class="disint19__sp">Обучение в мини-группах</p>
+          <p>Сотни часов практики</p>
+          <p>Стажировки у партнеров</p>
+          <p>Сопровождение <br>до первых клиентов</p>
+          <p>Яркая студенческая жизнь</p>
         </div>
       </div>
     </div>
   </div>
-
-
 
 
 
@@ -746,17 +742,21 @@
         </div>
       </div>
       <?php
+        $buttonTxt = 'Сделать выбор';
         $formClassName = 'programfromlead__formwrap--yellow';
         include('./../templates/leadform.php');
         $formClassName = '';
+        $buttonTxt = null;
       ?>
     </div>
   </section><!-- //stepform -->
 
 
 
+
+
   <div class="disint21">
-    <section class="statistic container psy20">
+    <section class="statistic container">
       <h2 class="title">Поговорим о цифрах</h2>
       <div class="statistic__grid">
         <dl class="statistic__item statistic__item--verbg">
@@ -767,7 +767,7 @@
           <dt class="js-slide-opac">200</dt>
           <dd>Уроков <br>в HD-качестве</dd>
         </dl>
-        <dl class="statistic__item">
+        <dl class="statistic__item statistic__item--col2">
           <dt class="js-slide-opac">100+</dt>
           <dd>Часов практических занятий</dd>
         </dl>
@@ -793,7 +793,8 @@
 
 
 
-  <section class="dreams disint22">
+
+  <section class="dreams disint22 disint5">
     <div class="container">
       <h2 class="title">Вот, что ты в конечном <br>итоге <b>будешь уметь</b></h2>
       <div class="grid-mob-scroll">
@@ -831,7 +832,7 @@
               </small>
             </div>
           </div>
-          <div class="dreams__item">
+          <div class="dreams__item dreams__item--nobg">
             <div class="dreams__iconwrap">
               <img src="/img/dizayner-interyera/b22-4.webp" alt="" class="js-slide-opac">
             </div>
@@ -875,7 +876,8 @@
               </small>
             </div>
           </div>
-          <div class="dreams__item">
+          <div class="dreams__item dreams__item--complex">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
             <div class="dreams__iconwrap">
               <img src="/img/dizayner-interyera/b22-8.webp" alt="" class="js-slide-opac">
             </div>
@@ -897,7 +899,7 @@
               </small>
             </div>
           </div>
-          <div class="dreams__item">
+          <div class="dreams__item dreams__item--nobg">
             <div class="dreams__iconwrap">
               <img src="/img/dizayner-interyera/b22-10.webp" alt="" class="js-slide-opac">
             </div>
@@ -908,7 +910,7 @@
               </small>
             </div>
           </div>
-          <div class="dreams__item">
+          <div class="dreams__item dreams__item--nobg">
             <div class="dreams__iconwrap">
               <img src="/img/dizayner-interyera/b22-11.webp" alt="" class="js-slide-opac">
             </div>
@@ -959,7 +961,7 @@
 
 
 
-  <section class="priceblock" id="offer">
+  <section class="priceblock disint24" id="offer">
     <div class="container">
       <h2 class="title">Стоимость обучения</h2>
       <div class="priceblock__row flexi">
@@ -987,10 +989,7 @@
 
 
 
-
-
-
-  <section class="faqblock">
+  <section class="faqblock faqblock--disint">
     <h2 class="title">Часто задаваемые вопросы</h2>
     <div class="faqblock__wrap container">
       <div class="progrmsummary__item" data-hidewrap="faq1">
@@ -1183,7 +1182,7 @@
 
 
 
-  <section class="talentsyabout talentsyabout--sex">
+  <section class="talentsyabout talentsyabout--disint">
     <div class="talentsyabout__topbg">
       <div class="container">
         <img src="/img/footer/logo-white.svg" alt="" class="talentsyabout__logo js-slide-opac">
@@ -1209,7 +1208,7 @@
             <dd>Выдающихся <br>преподавателей</dd>
           </dl>
           <dl class="talentsyabout__prop talentsyabout__prop--yellow">
-            <dt class="js-slide-opac">13k<img src="/img/footer/props-heart-violet.svg" alt="" class="talentsyabout__heart"></dt>
+            <dt class="js-slide-opac">13k<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 51 50" class="talentsyabout__heart"><path fill="currentColor" fill-rule="evenodd" d="M16.833.51c2.064.067 3.876.475 5.03 1.05 1.326.66 2.566 1.417 3.646 2.255 1.071-.834 2.299-1.589 3.608-2.253l.226.446-.226-.446C30.255.985 32.058.577 34.118.51c2.07-.068 4.444.206 6.733 1.032 2.29.826 4.504 2.209 6.233 4.361 1.73 2.154 2.951 5.053 3.298 8.876.721 7.956-1.907 14.137-6.48 19.567-4.554 5.406-11.051 10.086-18.08 15.062a.5.5 0 0 1-.578-.816c7.052-4.992 13.437-9.6 17.893-14.89 4.435-5.267 6.942-11.19 6.249-18.833-.331-3.65-1.49-6.357-3.082-8.34-1.594-1.985-3.643-3.271-5.793-4.047-2.152-.776-4.396-1.037-6.36-.973-1.973.065-3.618.456-4.582.945a21.696 21.696 0 0 0-3.27 2.015c1.249 1.106 2.213 2.335 2.742 3.658.535 1.338.62 2.766.105 4.224-.51 1.448-1.598 2.887-3.34 4.29a.5.5 0 0 1-.628 0c-1.741-1.403-2.828-2.839-3.337-4.283-.513-1.455-.425-2.879.111-4.214.534-1.327 1.507-2.561 2.766-3.675a21.107 21.107 0 0 0-3.3-2.014l.223-.447-.223.447c-.985-.49-2.642-.881-4.618-.946-1.967-.064-4.21.197-6.356.973C8.3 3.257 6.258 4.544 4.67 6.53c-1.586 1.982-2.74 4.689-3.072 8.34-1.24 13.684 9.574 23.525 17.777 29.395a.5.5 0 1 1-.582.813C10.594 39.21-.693 29.067.603 14.78c.346-3.822 1.563-6.72 3.286-8.875 1.722-2.152 3.928-3.536 6.215-4.362C12.388.716 14.759.442 16.833.51Zm8.676 4.597c-1.23 1.061-2.148 2.213-2.629 3.41-.453 1.128-.521 2.3-.096 3.508.402 1.138 1.254 2.342 2.708 3.578 1.454-1.236 2.308-2.443 2.711-3.585.428-1.212.361-2.39-.09-3.52-.477-1.192-1.385-2.338-2.604-3.391Z" clip-rule="evenodd"/></svg>
             <dd>Любимых <br>студентов</dd>
           </dl>
         </div>
@@ -1464,8 +1463,8 @@
     </svg>
   </a>
 
-  <!-- <script src="https://unpkg.com/@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script> -->
-  <!-- <script src="/js/custom/vkscript.js"></script> -->
+  <script src="https://unpkg.com/@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script>
+  <script src="/js/custom/vkscript.js"></script>
 
 
 

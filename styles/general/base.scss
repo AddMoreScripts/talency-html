@@ -305,6 +305,8 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+  z-index: 5;
 
   @media (max-width:1400px) {
     font-size: 60px;

@@ -41,7 +41,7 @@
     </div><!-- //programfromlead__left -->
     <div class="programfromlead__right">
       <button class="programfromlead__submit circlebutton">
-        Получить <br>консультацию
+        <?=isset($buttonTxt) ? $buttonTxt : 'Получить <br>консультацию'; ?>
       </button>
       <div class="accept accept--mob">Отправляя данную форму вы соглашаетесь с условиями <a href="#">оферты</a> и
         политикой <a href="#">обработки персональных данных</a></div>

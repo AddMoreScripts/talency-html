@@ -75,7 +75,7 @@
           <source src="/img/psychology/psycho_main.mp4">
         </video>
       </div>
-      <a href="#" class="hero__overbutton circlebutton">
+      <a href="#offer" class="hero__overbutton circlebutton" data-scrollto="">
         Стать<br>
         психологом-<br>
         консультатном
@@ -130,7 +130,11 @@
       <h2 class="title">
         Получить полную<br> <b>программу курса</b>
       </h2>
-      <?php include('./templates/leadform.php'); ?>
+      <?php
+      $buttonTxt = 'Получить программу';
+      include('./templates/leadform.php');
+      $buttonTxt = null;
+      ?>
     </div>
   </section><!-- //programfromlead -->
 
@@ -611,7 +615,9 @@
           <p class="js-slide-interval">Даст подробную информацию <br>о&nbsp;начале учебы на&nbsp;курсе</p>
         </div>
       </div>
-      <?php include('./templates/leadform.php'); ?>
+      <?php
+        include('./templates/leadform.php');
+      ?>
     </div>
   </section><!-- //stepform -->
 
@@ -1036,7 +1042,11 @@
         <span><b>психолог-консультант</b></span>
         <img src="/img/psychology/b14-book.png" alt="">
       </h3>
-      <?php include('./templates/leadform.php'); ?>
+      <?php
+        $buttonTxt = 'Получить гайд';
+        include('./templates/leadform.php');
+        $buttonTxt = null;
+      ?>
     </div>
   </section><!-- //guideform -->
 
@@ -1160,7 +1170,11 @@
             о&nbsp;начале учебы на&nbsp;курсе</p>
         </div>
       </div>
-      <?php include('./templates/leadform.php'); ?>
+      <?php
+        $buttonTxt = 'Сделать выбор';
+        include('./templates/leadform.php');
+        $buttonTxt = null;
+      ?>
     </div>
   </section><!-- //stepform -->
 
@@ -1755,8 +1769,8 @@
   <?php include('./templates/footer.php'); ?>
 
 
-  <!-- <script src="https://unpkg.com/@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script>
-  <script src="/js/custom/vkscript.js"></script> -->
+  <script src="https://unpkg.com/@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script>
+  <script src="/js/custom/vkscript.js"></script>
 
 </body>
 

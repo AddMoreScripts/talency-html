@@ -1,0 +1,81 @@
+{
+  "img/dizayner-interyera/b1-golden-mob.svg": {
+    "file": "img/b1-golden-mob.svg",
+    "src": "img/dizayner-interyera/b1-golden-mob.svg"
+  },
+  "img/dizayner-interyera/b1-golden.svg": {
+    "file": "img/b1-golden.svg",
+    "src": "img/dizayner-interyera/b1-golden.svg"
+  },
+  "img/dizayner-interyera/b18-golden.svg": {
+    "file": "img/b18-golden.svg",
+    "src": "img/dizayner-interyera/b18-golden.svg"
+  },
+  "img/dizayner-interyera/b8-golden.svg": {
+    "file": "img/b8-golden.svg",
+    "src": "img/dizayner-interyera/b8-golden.svg"
+  },
+  "img/footer/footer-line-m.svg": {
+    "file": "img/footer-line-m.svg",
+    "src": "img/footer/footer-line-m.svg"
+  },
+  "img/footer/form-abs1.png": {
+    "file": "img/form-abs1.png",
+    "src": "img/footer/form-abs1.png"
+  },
+  "img/footer/form-abs2.png": {
+    "file": "img/form-abs2.png",
+    "src": "img/footer/form-abs2.png"
+  },
+  "img/footer/mobfoot-cont.svg": {
+    "file": "img/mobfoot-cont.svg",
+    "src": "img/footer/mobfoot-cont.svg"
+  },
+  "img/psychology/b19-mobbg.svg": {
+    "file": "img/b19-mobbg.svg",
+    "src": "img/psychology/b19-mobbg.svg"
+  },
+  "img/psychology/b25-arrow.svg": {
+    "file": "img/b25-arrow.svg",
+    "src": "img/psychology/b25-arrow.svg"
+  },
+  "img/sexolog/b6-cross.svg": {
+    "file": "img/b6-cross.svg",
+    "src": "img/sexolog/b6-cross.svg"
+  },
+  "img/ui/chevron-down.svg": {
+    "file": "img/chevron-down.svg",
+    "src": "img/ui/chevron-down.svg"
+  },
+  "img/ui/circle-arrow.svg": {
+    "file": "img/circle-arrow.svg",
+    "src": "img/ui/circle-arrow.svg"
+  },
+  "js/main.css": {
+    "file": "assets/main.css",
+    "src": "js/main.css"
+  },
+  "js/main.js": {
+    "assets": [
+      "img/circle-arrow.svg",
+      "img/chevron-down.svg",
+      "img/b19-mobbg.svg",
+      "img/b25-arrow.svg",
+      "img/b6-cross.svg",
+      "img/b1-golden.svg",
+      "img/b1-golden-mob.svg",
+      "img/b8-golden.svg",
+      "img/b18-golden.svg",
+      "img/form-abs1.png",
+      "img/form-abs2.png",
+      "img/footer-line-m.svg",
+      "img/mobfoot-cont.svg"
+    ],
+    "css": [
+      "assets/main.css"
+    ],
+    "file": "assets/main-add.js",
+    "isEntry": true,
+    "src": "js/main.js"
+  }
+}
