@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="container footerform">
-    <div class="footerform__title">Поможем в выборе!</div>
+    <div class="footerform__title druk">Поможем в выборе!</div>
     <div class="footerform__sub">
       Если у вас есть вопросы или вы не знаете что <br>
       выбрать, оставьте свой номер: мы позвоним, чтобы <br>

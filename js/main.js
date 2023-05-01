@@ -12,6 +12,7 @@ import initVideoReviews from './components/videoreview';
 import '../styles/app.scss';
 import initScrollAnimation from './components/scrollAnimation';
 import startInputMask from './components/phonemasks';
+import { initFrontpage } from './components/frontpage';
 
 initSliders();
 startAccordeons();
@@ -71,3 +72,6 @@ const promocodeLink = () => {
   });
 };
 promocodeLink();
+
+
+if(document.querySelector('.js-frontpage')) frontpage();

@@ -1,4 +1,8 @@
 {
+  "fonts/DrukWideCyr-Medium.woff": {
+    "file": "img/DrukWideCyr-Medium.woff",
+    "src": "fonts/DrukWideCyr-Medium.woff"
+  },
   "img/dizayner-interyera/b1-golden-mob.svg": {
     "file": "img/b1-golden-mob.svg",
     "src": "img/dizayner-interyera/b1-golden-mob.svg"
@@ -57,6 +61,7 @@
   },
   "js/main.js": {
     "assets": [
+      "img/DrukWideCyr-Medium.woff",
       "img/circle-arrow.svg",
       "img/chevron-down.svg",
       "img/b19-mobbg.svg",

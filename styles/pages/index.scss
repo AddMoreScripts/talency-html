@@ -1,0 +1,162 @@
+@use '../general/mixins' as *;
+
+
+.frontpage .hdr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.frontlead {
+  position: relative;
+  &__bgs {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__real{
+    padding-top: 155px;
+    position: relative;
+    z-index: 10;
+    height: 1190px;
+    max-height: 1000px;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 54px;
+    line-height: 1;
+    margin-bottom: 340px;
+  }
+
+  &__sub {
+    font-size: 22px;
+  }
+
+  &__hovers {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+}
+.frontleadbg{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  img{
+    display: block;
+    position: absolute;
+    width: 1750px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: auto;
+    object-fit: contain;
+  }
+
+  &--6 img{
+    margin-top: 0px;
+    width: 2050px;
+  }
+
+  &.is-active{
+    opacity: 1;
+  }
+}
+
+
+
+
+.front2 {
+
+  &__wrap {
+    justify-content: space-between;
+    margin-top: -65px;
+  }
+
+  &__item {
+    width: 260px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #b1fdeb;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 27px 50px;
+    position: relative;
+
+    &:nth-child(1){
+      margin-top: 65px;
+    }
+    &:nth-child(2){
+      margin-top: 125px;
+    }
+    &:nth-child(3){
+      margin-top: 40px;
+    }
+    &:nth-child(4){
+      margin-top: 0;
+    }
+  }
+
+  &__picwrap {
+    position: relative;
+    height: 160px;
+    margin-bottom: 10px;
+  }
+
+  &__pic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &--1{
+      bottom: 30px;
+      left: -35px;
+    }
+    &--2{
+      left: -85px;
+      bottom: 5px;
+
+    }
+    &--3{
+      left: -5px;
+      bottom: 10px;
+    }
+    &--4{
+      left: -10px;
+      bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  &__sub {
+    opacity: 0.6;
+  }
+}
+.container {
+}

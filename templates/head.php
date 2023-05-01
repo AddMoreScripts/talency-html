@@ -14,7 +14,7 @@ $formClassName = '';
 <script src="/js/custom/jquery-3.6.4.min.js"></script>
 <?= vite('js/main.js') ?>
 
-
+<?php if(0): ?>
 <!-- Google Tag Manager -->
 <script>
   (function(w, d, s, l, i) {
@@ -49,3 +49,4 @@ $formClassName = '';
   })(document, window);
 </script>
 <!-- /Pixel -->
+<?php endif; ?>
