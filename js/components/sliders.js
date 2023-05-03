@@ -74,4 +74,23 @@ export const initSliders = () => {
     });
   }
 
+  //Главная стр.
+  new Swiper('.js-front-cat .swiper', {
+    loop: false,
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    navigation: false,
+    pagination: false,
+    autoHeight: false,
+    navigation: {
+      prevEl: ".js-front-cat .ctrl--prev",
+      nextEl: ".js-front-cat .ctrl--next",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+      },
+    }
+  });
+
 }

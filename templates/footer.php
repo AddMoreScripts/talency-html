@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="container footerform">
-    <div class="footerform__title druk">Поможем в выборе!</div>
+    <div class="footerform__title druk">Поможем в&nbsp;выборе!</div>
     <div class="footerform__sub">
       Если у вас есть вопросы или вы не знаете что <br>
       выбрать, оставьте свой номер: мы позвоним, чтобы <br>
@@ -210,10 +210,3 @@
     </div>
   </div><!-- //footerbot -->
 </footer>
-
-
-<a class="scrollTop" href="#">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="18 15 12 9 6 15"></polyline>
-  </svg>
-</a>

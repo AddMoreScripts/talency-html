@@ -21,3 +21,19 @@ $media-max-width-xs: (425px) !default;
     @error "Unknown breakpoint:" $breakpoint;
   }
 }
+
+
+@mixin gridtoflexmob(){
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-gap: 0;
+  &::after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+}

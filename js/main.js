@@ -74,4 +74,4 @@ const promocodeLink = () => {
 promocodeLink();
 
 
-if(document.querySelector('.js-frontpage')) frontpage();
+if(document.querySelector('.js-frontpage')) initFrontpage();
