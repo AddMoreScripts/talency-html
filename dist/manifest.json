@@ -35,6 +35,18 @@
     "file": "img/mobfoot-cont.svg",
     "src": "img/footer/mobfoot-cont.svg"
   },
+  "img/menu/mob-line.svg": {
+    "file": "img/mob-line.svg",
+    "src": "img/menu/mob-line.svg"
+  },
+  "img/menu/tape-left.png": {
+    "file": "img/tape-left.png",
+    "src": "img/menu/tape-left.png"
+  },
+  "img/menu/tape-right.png": {
+    "file": "img/tape-right.png",
+    "src": "img/menu/tape-right.png"
+  },
   "img/psychology/b19-mobbg.svg": {
     "file": "img/b19-mobbg.svg",
     "src": "img/psychology/b19-mobbg.svg"
@@ -64,6 +76,9 @@
       "img/DrukWideCyr-Medium.woff",
       "img/circle-arrow.svg",
       "img/chevron-down.svg",
+      "img/mob-line.svg",
+      "img/tape-left.png",
+      "img/tape-right.png",
       "img/b19-mobbg.svg",
       "img/b25-arrow.svg",
       "img/b6-cross.svg",

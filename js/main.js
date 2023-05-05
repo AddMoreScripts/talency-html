@@ -9,10 +9,12 @@ import initScrollTo from './components/scrollTo';
 import { initSliders } from './components/sliders';
 import { startAccordeons } from './components/accordeons';
 import initVideoReviews from './components/videoreview';
-import '../styles/app.scss';
 import initScrollAnimation from './components/scrollAnimation';
 import startInputMask from './components/phonemasks';
 import { initFrontpage } from './components/frontpage';
+import { startTabs } from './components/tabs';
+import '../styles/app.scss';
+
 
 initSliders();
 startAccordeons();
@@ -21,6 +23,7 @@ initScrollTo();
 initScrollTop();
 initScrollAnimation();
 startInputMask();
+startTabs();
 
 
 /**
@@ -50,7 +53,8 @@ Fancybox.bind('[data-fancybox]', {
  */
 window.modalInstance = new HystModal({
   linkAttributeName: "data-hystmodal",
-  waitTransitions: false,
+  waitTransitions: true,
+  catchFocus:false,
 });
 
 

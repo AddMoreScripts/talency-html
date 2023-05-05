@@ -50,9 +50,9 @@ $(document).ready(function () {
   });
 
   // каталог
-  $("body").on("click", ".hdr__burger", function () {
-    window.location.href = "https://talentsy.ru/menu";
-  });
+  // $("body").on("click", ".hdr__burger", function () {
+  //   window.location.href = "https://talentsy.ru/menu";
+  // });
 
   // промокоды
   $("body").on("click", ".jsPmoRequest", function () {

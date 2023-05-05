@@ -11,46 +11,7 @@
 
 <body class="frontpage js-frontpage">
 
-  <!-- === === === ШАПКА СТАРТ === === === -->
-  <div class="js-scroll-elem"></div>
-
-  <header class="hdr">
-    <div class="hdr__wrap flexi">
-
-      <!-- Стандартный вывод логотипа WordPress ф-ей the_custom_logo() -->
-      <a href="/" class="custom-logo-link">
-        <img src="/img/ui/logo.svg" alt="">
-      </a>
-
-      <div class="hdr__burgerwrap">
-        <button class="hdr__burger">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-            <path stroke="#fff" stroke-width="2" d="m1 7.5 20 1M3 15.5l20 1" />
-          </svg>
-          <span>Каталог курсов</span>
-        </button>
-      </div>
-
-      <nav class="hdr__leftmenu">
-        <ul>
-          <li>
-            <a href="https://blog.talentsy.ru/">Журнал</a>
-          </li>
-          <li>
-            <a href="https://talentsy.ru/otzyvy">Отзывы</a>
-          </li>
-        </ul>
-      </nav>
-
-      <aside class="hdr__right flexi">
-        <a href="https://talentsy.ru/o-talentsy">О Talentsy</a>
-        <a href="tel:88007753768" class="hdr__phone">8 800 775 37 68</a>
-        <a href="https://lk.talentsy.ru/" class="hdr__login flexi">Вход</a>
-      </aside>
-
-    </div>
-  </header>
-  <!-- /=== === === ШАПКА КОНЕЦ === === === -->
+  <?php include('./templates/header.php'); ?>
 
   <div class="smooth-wrapper">
     <div class="smooth-content">
@@ -181,7 +142,7 @@
         ],
         [
           'title' => 'Психология',
-          'link' => 'https://talentsy.ru/fakultet-psikhologii',
+          'link' => '/psychology/',
           'line' => '/img/frontpage/b3-line3.svg',
           'line-mob' => '/img/frontpage/b3-line3-m.svg',
           'bg' => '/img/frontpage/b3-3.png',
@@ -190,7 +151,7 @@
         ],
         [
           'title' => 'Дизайн интерьера',
-          'link' => 'https://talentsy.ru/fakultet-dizayna-interyera',
+          'link' => '/dizayner-interyera/',
           'line' => '/img/frontpage/b3-line4.svg',
           'line-mob' => '/img/frontpage/b3-line4-m.svg',
           'bg' => '/img/frontpage/b3-4.png',
@@ -381,7 +342,7 @@
           <div class="frontcatalog__slider swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="https://talentsy.ru/dizayner-interyera" class="frontfacultet">
+                <a href="/dizayner-interyera/" class="frontfacultet">
                   <div class="frontfacultet__picwrap">
                     <img data-src="/img/frontpage/proff/001.png" alt="" class="frontfacultet__pic lazy">
                   </div>
@@ -394,7 +355,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="https://talentsy.ru/professiya-psikholog" class="frontfacultet">
+                <a href="/psychology/" class="frontfacultet">
                   <div class="frontfacultet__picwrap">
                     <img data-src="/img/frontpage/proff/002.png" alt="" class="frontfacultet__pic lazy">
                   </div>
@@ -407,7 +368,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="https://talentsy.ru/seksolog" class="frontfacultet">
+                <a href="/seksolog/" class="frontfacultet">
                   <div class="frontfacultet__picwrap">
                     <img data-src="/img/frontpage/proff/003.png" alt="" class="frontfacultet__pic lazy">
                   </div>
@@ -547,15 +508,8 @@
     </div>
   </div>
 
-  <a class="scrollTop" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </a>
 
-
-  <!-- <script src="https://unpkg.com/@vkontakte/superappkit@1.57.0/dist/index-umd.js"></script> -->
-  <!-- <script src="/js/custom/vkscript.js"></script> -->
+  <?php include('./templates/end.php'); ?>
 </body>
 
 </html>
