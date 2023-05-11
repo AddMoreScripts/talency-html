@@ -381,7 +381,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="https://talentsy.ru/psychology-kid" class="frontfacultet">
+                <a href="/psychology-kid" class="frontfacultet">
                   <div class="frontfacultet__picwrap">
                     <img data-src="/img/frontpage/proff/004.png" alt="" class="frontfacultet__pic lazy">
                   </div>

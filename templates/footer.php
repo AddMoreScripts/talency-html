@@ -41,7 +41,7 @@
         <section class="footermiddle1">
           <a href="#" class="footermiddle__phone">8 800 775—3768</a>
           <div class="footermiddle__addr">Москва, Ащеулов пер, д.9</div>
-          <a href="#" class="footermiddle__licence">
+          <a href="https://islod.obrnadzor.gov.ru/rlic/details/6fe5bf26-59b9-9ba3-c6bb-1c51f27dacd7/" class="footermiddle__licence" target="_blank">
             <img src="/img/footer/licence.jpg" alt="">
             <span>Государственная <br>лицензия</span>
           </a>
@@ -155,7 +155,7 @@
         <a href="https://vk.com/talentsyofficial" class="mobfoot__soclink" target="_blank">Вконтакте</a>
         <a href="https://www.youtube.com/channel/UCZCFFjqhDwfI7Bmn7Z_jD0w?view_as=subscriber" class="mobfoot__soclink" target="_blank">Ютюб</a>
         <a href="https://pin.it/64rsuUj" class="mobfoot__soclink" target="_blank">Pinterest</a>
-        <a href="#" class="mobfoot__lic flexi">
+        <a href="https://islod.obrnadzor.gov.ru/rlic/details/6fe5bf26-59b9-9ba3-c6bb-1c51f27dacd7/" target="_blank" class="mobfoot__lic flexi">
           <img src="/img/footer/licence.jpg" alt="">
           <span>Государ-ственная лицензия</span>
         </a>

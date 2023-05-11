@@ -2,6 +2,7 @@
 
 :root {
   --psy-accent: #27b783;
+  --darkbg-accent: #368048;
   --blockspace: 100px;
   --iconsize: 144px;
 
@@ -333,6 +334,27 @@
     }
   }
 
+  &__propicon--text{
+    width: var(--iconsize);
+    height: var(--iconsize);
+    border:1px solid var(--psy-accent);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color:var(--psy-accent);
+    border-radius: 200px;
+    font-size: 40px;
+    line-height: 1;
+
+    @include media(l){
+      font-size: 30px;
+    }
+    @include media(m){
+      font-size: 20px;
+    }
+  }
+
   &__proptitle {
     font-size: 26px;
     line-height: 1.2;
@@ -608,12 +630,22 @@
       }
     }
 
-    img {
+    img:not(.dreams__heart){
       display: block;
       height: 100%;
       border-radius: 72px;
       width: auto;
     }
+  }
+
+  &__heart{
+    position: absolute;
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    border-radius: 0;
   }
 
   &__item--bg {
@@ -636,6 +668,23 @@
       position: relative;
       z-index: 10;
       color: #fff;
+    }
+    .dreamsltitle--gray{
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: auto -40px -35px;
+      padding: 30px 40px 35px;
+      border-radius: 20px;
+
+      @include media(l) {
+        margin: auto -30px -30px;
+        padding: 30px;
+      }
+
+      @include media(m) {
+        margin: auto -15px -30px;
+        padding: 20px 10px 30px;
+        border-radius: 10px;
+      }
     }
   }
   &__item--light {
@@ -718,9 +767,9 @@
     justify-content: center;
     text-align: center;
     border: 1px solid #000;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 400;
     color: #000;
 
     @include media(l) {
@@ -731,11 +780,15 @@
       flex-flow: column nowrap;
     }
 
-    img {
+    img, svg{
       display: block;
       width: 30px;
       flex-shrink: 0;
-      margin-left: 10px;
+      margin-left: 7px;
+
+      path{
+        stroke:var(--psy-accent);
+      }
 
       @include media(l) {
         width: 20px;
@@ -967,7 +1020,7 @@
   }
 
   &__navlink {
-    color: #368048;
+    color: var(--darkbg-accent);
     text-transform: uppercase;
     font-size: 54px;
     text-transform: uppercase;
@@ -1247,6 +1300,12 @@
           width: auto;
           object-fit: cover;
         }
+
+        p.features__mobmin{
+          @include media(m){
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -1265,6 +1324,23 @@
 
     @include media(m) {
       margin-top: 25px;
+    }
+  }
+
+  &__h2{
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+
+    @include media(m){
+      font-size: 24px;
+      padding-left: 20px;
+    }
+
+    &:first-child{
+      margin-top: 0;
     }
   }
 
@@ -1428,6 +1504,7 @@
 }
 
 .guideform {
+  overflow: hidden;
   background-color: #ededed;
   padding-top: 210px;
   padding-bottom: 145px;
@@ -1984,6 +2061,10 @@
   }
 }
 
+.statistic__item--short{
+  grid-column: auto !important;
+}
+
 .psy21 {
   background: #f0f0f0;
   padding-top: 140px;
@@ -2433,6 +2514,7 @@
   color: #fff;
   padding-top: 145px;
   padding-bottom: 50px;
+  overflow: hidden;
 
   @include media(l) {
     padding-top: var(--blockspace);

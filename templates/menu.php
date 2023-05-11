@@ -132,7 +132,7 @@
                   <ul class="menuwindow__submenu">
                     <li><a href="/professiya-psikholog">Психолог-консультант</a></li>
                     <li><a href="/seksolog">Консультант в сфере <br>сексуальных отношений</a></li>
-                    <li><a href="https://talentsy.ru/psychology-kid">Детский психолог-консультант</a></li>
+                    <li><a href="/psychology-kid">Детский психолог-консультант</a></li>
                     <li><a href="https://talentsy.ru/professiya-family-psikholog">Семейный психолог-консультант</a></li>
                   </ul>
                 </div>
